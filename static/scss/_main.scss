@@ -1,0 +1,28 @@
+html {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	position: relative;
+
+	overflow-x: hidden;
+
+	background-color: #ffffff;
+
+	font-family: 'FiraSans', Arial, sans-serif;
+	font-size: 0;
+}
