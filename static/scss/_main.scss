@@ -21,8 +21,60 @@ body {
 
 	overflow-x: hidden;
 
-	background-color: #ffffff;
+	background-color: #f5f6f8;
 
-	font-family: 'FiraSans', Arial, sans-serif;
+	font-family: 'Avenir Next Cyr Regular', Arial, sans-serif;
 	font-size: 0;
+}
+
+.wrapper {
+	width: 1170px;
+	height: 445px;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.quiz {
+	max-width: 1170px;
+	max-height: 445px;
+	height: 100%;
+}
+
+.main-slide {
+	display: flex;
+	justify-content: flex-end;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../img/main-bg.jpg");
+	height: 100%;
+
+	&-content {
+		width: 800px;
+		background-color: $main-bg-content;
+		display: flex;
+		flex-direction: column;
+		padding-left: 60px;
+		padding-top: 65px;
+	}
+
+	&-header {
+		display: flex;
+		p {
+			font-family: $medium;
+		}
+	}
+
+	&__title {
+		font-family: $bold;
+		font-size: 46.67px;
+		line-height: 51.86px;
+		color: $main-font-color;
+	}
+
+	&-main {
+		display: flex;
+	}
 }

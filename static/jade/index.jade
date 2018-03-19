@@ -4,5 +4,21 @@ doctype html
 html(lang="ru")
 	+head
 	body
-		+header
-		+header-menu
+		.wrapper
+			article.quiz
+				.main-slide
+					.main-slide-content
+						.main-slide-header
+							h1.main-slide__title Какая каша вам подходит?
+							p Пройдите тест и получите 
+								b.bg-white 3 подарка
+						.main-slide-main
+							ul
+								li
+									b.bg-white 10 полезных привычек питания
+								li
+									b.bg-white Программа утренних тренировок
+								li
+									b.bg-white Скидка 10% в «Healthy Food»
+							button(type="button") Начать тест 
+		+footer

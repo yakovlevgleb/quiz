@@ -1,21 +1,27 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "FiraSans";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/FiraSans-Regular.woff2") format("woff2"), url("../fonts/FiraSans-Regular.woff") format("woff2"), url("../fonts/FiraSans-Regular.woff") format("svg"); }
+  font-family: 'Avenir Next Cyr Bold';
+  src: url("../fonts/AvenirNextCyr-Bold.woff") format("woff"), url("../fonts/AvenirNextCyr-Bold.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Bold.svg#AvenirNextCyr-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
 
 @font-face {
-  font-family: "FiraSans-Bold";
-  font-weight: 800;
-  font-style: normal;
-  src: url("../fonts/FiraSans-Bold.woff2") format("woff"), url("../fonts/FiraSans-Bold.woff") format("woff2"), url("../fonts/FiraSans-Bold.woff") format("svg"); }
+  font-family: 'Avenir Next Cyr Regular';
+  src: url("../fonts/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AvenirNextCyr-Regular.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Regular.svg#AvenirNextCyr-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-  font-family: "FiraSans-Black";
-  font-weight: 900;
-  font-style: normal;
-  src: url("../fonts/FiraSans-Black.woff2") format("woff"), url("../fonts/FiraSans-Black.woff") format("woff2"), url("../fonts/FiraSans-Black.woff") format("svg"); }
+  font-family: 'Avenir Next Cyr Demi';
+  src: url("../fonts/AvenirNextCyr-Demi.woff") format("woff"), url("../fonts/AvenirNextCyr-Demi.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Demi.svg#AvenirNextCyr-Demi") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next Cyr Medium';
+  src: url("../fonts/AvenirNextCyr-Medium.woff") format("woff"), url("../fonts/AvenirNextCyr-Medium.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Medium.svg#AvenirNextCyr-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -1390,6 +1396,55 @@ html {
 body {
   position: relative;
   overflow-x: hidden;
-  background-color: #ffffff;
-  font-family: 'FiraSans', Arial, sans-serif;
+  background-color: #f5f6f8;
+  font-family: 'Avenir Next Cyr Regular', Arial, sans-serif;
   font-size: 0; }
+
+.wrapper {
+  width: 1170px;
+  height: 445px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.quiz {
+  max-width: 1170px;
+  max-height: 445px;
+  height: 100%; }
+
+.main-slide {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/main-bg.jpg");
+  height: 100%; }
+  .main-slide-content {
+    width: 800px;
+    background-color: rgba(134, 196, 255, 0.98);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    padding-left: 60px;
+    padding-top: 65px; }
+  .main-slide-header {
+    display: -webkit-box;
+    display: flex; }
+    .main-slide-header p {
+      font-family: "Avenir Next Cyr Medium", sans-serif; }
+  .main-slide__title {
+    font-family: "Avenir Next Cyr Bold", sans-serif;
+    font-size: 46.67px;
+    line-height: 51.86px;
+    color: #ffffff; }
+  .main-slide-main {
+    display: -webkit-box;
+    display: flex; }
