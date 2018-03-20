@@ -13,12 +13,41 @@ html(lang="ru")
 							p Пройдите тест и получите 
 								b.bg-white 3 подарка
 						.main-slide-main
-							ul
-								li
-									b.bg-white 10 полезных привычек питания
-								li
-									b.bg-white Программа утренних тренировок
-								li
-									b.bg-white Скидка 10% в «Healthy Food»
-							button(type="button") Начать тест 
+							ul.main-slide-list
+								li.main-slide-item
+									span.bg-white 10 полезных привычек питания
+								li.main-slide-item
+									span.bg-white Программа утренних тренировок
+								li.main-slide-item
+									span.bg-white Скидка 10% в «Healthy Food»
+							button(type="button").main-slide__btn.btn Начать тест
+				.quiz-first-slide
+					form.quiz-form
+						p.quiz-question Как часто вы едите кашу утром?
+						.quiz-answers
+							.quiz-column
+								.quiz-item
+									input(type="radio", id="radio1", data-type="radio", name="radio1", value="Каждый день")
+									label(for="radio1") Каждый день
+								.quiz-item
+									input(type="radio", id="radio2", data-type="radio", name="radio1", value="Пару раз в месяц")
+									label(for="radio2") Пару раз в месяц
+							.quiz-column
+								.quiz-item
+									input(type="radio", id="radio3", data-type="radio", name="radio1", value="Один-два раза в неделю")
+									label(for="radio3") Один-два раза в неделю
+								.quiz-item
+									input(type="radio", id="radio4", data-type="radio", name="radio1", value="Не ем кашу вообще никогда")
+									label(for="radio4") Не ем кашу вообще никогда
+						.quiz-progress
+							.quiz-btns
+								button(type="button").quiz-btn.quiz-btn--prev.btn Назад
+								span вопрос 1/5
+								button(type="button").quiz-btn.quiz-btn--next.btn Далее
+							progress(value="0" max="100")
+					.quiz-comment
+						img(src="img/face.jpg", alt="")
+						span.quiz-comment__name Вероника Петрова
+						span.quiz-comment__post диетолог
+						blockquote.quiz-comment__text Известно, что присутствие в ежедневном рационе цельных злаков и круп значительно улучшает работу кишечника, уменьшает опасность запоров, восстанавливает структуру кожи, делая ее гладкой, как у младенца.
 		+footer

@@ -30,13 +30,50 @@
               <p>Пройдите тест и получите <b class="bg-white">3 подарка</b></p>
             </div>
             <div class="main-slide-main">
-              <ul>
-                <li><b class="bg-white">10 полезных привычек питания</b></li>
-                <li><b class="bg-white">Программа утренних тренировок</b></li>
-                <li><b class="bg-white">Скидка 10% в «Healthy Food»</b></li>
+              <ul class="main-slide-list">
+                <li class="main-slide-item"><span class="bg-white">10 полезных привычек питания</span></li>
+                <li class="main-slide-item"><span class="bg-white">Программа утренних тренировок</span></li>
+                <li class="main-slide-item"><span class="bg-white">Скидка 10% в «Healthy Food»</span></li>
               </ul>
-              <button type="button">Начать тест </button>
+              <button type="button" class="main-slide__btn btn">Начать тест</button>
             </div>
+          </div>
+        </div>
+        <div class="quiz-first-slide">
+          <form class="quiz-form">
+            <p class="quiz-question">Как часто вы едите кашу утром?</p>
+            <div class="quiz-answers">
+              <div class="quiz-column">
+                <div class="quiz-item">
+                  <input type="radio" id="radio1" data-type="radio" name="radio1" value="Каждый день">
+                  <label for="radio1">Каждый день</label>
+                </div>
+                <div class="quiz-item">
+                  <input type="radio" id="radio2" data-type="radio" name="radio1" value="Пару раз в месяц">
+                  <label for="radio2">Пару раз в месяц</label>
+                </div>
+              </div>
+              <div class="quiz-column">
+                <div class="quiz-item">
+                  <input type="radio" id="radio3" data-type="radio" name="radio1" value="Один-два раза в неделю">
+                  <label for="radio3">Один-два раза в неделю</label>
+                </div>
+                <div class="quiz-item">
+                  <input type="radio" id="radio4" data-type="radio" name="radio1" value="Не ем кашу вообще никогда">
+                  <label for="radio4">Не ем кашу вообще никогда</label>
+                </div>
+              </div>
+            </div>
+            <div class="quiz-progress">
+              <div class="quiz-btns">
+                <button type="button" class="quiz-btn quiz-btn--prev btn">Назад</button><span>вопрос 1/5</span>
+                <button type="button" class="quiz-btn quiz-btn--next btn">Далее</button>
+              </div>
+              <progress value="0" max="100"></progress>
+            </div>
+          </form>
+          <div class="quiz-comment"><img src="img/face.jpg" alt=""><span class="quiz-comment__name">Вероника Петрова</span><span class="quiz-comment__post">диетолог</span>
+            <blockquote class="quiz-comment__text">Известно, что присутствие в ежедневном рационе цельных злаков и круп значительно улучшает работу кишечника, уменьшает опасность запоров, восстанавливает структуру кожи, делая ее гладкой, как у младенца.</blockquote>
           </div>
         </div>
       </article>
