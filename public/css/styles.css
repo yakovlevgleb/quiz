@@ -1401,6 +1401,8 @@ body {
   font-size: 0; }
 
 .jq-radio {
+  display: inline-block;
+  vertical-align: sub;
   width: 16px;
   height: 16px;
   margin-right: 11px;
@@ -1442,7 +1444,7 @@ body {
   top: 50%;
   left: 50%;
   width: 1170px;
-  height: 445px;
+  height: 485px;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1452,19 +1454,7 @@ body {
   max-width: 1170px;
   height: 100%;
   max-height: 485px; }
-  .quiz-answers {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
-    padding-right: 119px; }
-  .quiz-column {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column; }
-  .quiz--first-slide, .quiz--second-slide {
+  .quiz--first-slide, .quiz--second-slide, .quiz--third-slide, .quiz--fifth-slide {
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -1479,17 +1469,113 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     width: 870px;
     padding: 58px;
     padding-right: 30px;
+    padding-bottom: 40px;
     border: 1px solid #e8e8e8;
     border-right: none; }
-  .quiz-item {
-    margin-bottom: 21px; }
-    .quiz-item label {
+  .quiz-img-radios {
+    display: -webkit-box;
+    display: flex; }
+    .quiz-img-radios-column {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row;
+      width: 50%; }
+    .quiz-img-radios-row {
+      display: -webkit-box;
+      display: flex; }
+    .quiz-img-radios-item {
+      margin-right: 26px;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row; }
+      .quiz-img-radios-item label {
+        color: #1f1c1c;
+        font-size: 18px;
+        line-height: 26px; }
+      .quiz-img-radios-item input[type="text"] {
+        width: 779px;
+        border: 1px solid #e8e8e8;
+        font-family: "Avenir Next Cyr Regular", sans-serif;
+        color: #1f1c1c;
+        font-size: 18px;
+        line-height: 26px;
+        padding: 20px; }
+      .quiz-img-radios-item label {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+                flex-direction: column-reverse;
+        color: #1f1c1c;
+        font-size: 18px;
+        line-height: 26px;
+        cursor: pointer;
+        margin-bottom: -4px; }
+        .quiz-img-radios-item label img {
+          margin-left: -24px;
+          cursor: pointer;
+          margin-bottom: 10px;
+          pointer-events: none; }
+      .quiz-img-radios-item .jq-radio {
+        display: -webkit-box;
+        display: flex;
+        align-self: flex-end; }
+      .quiz-img-radios-item .text-label {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        -webkit-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+                transform: translate(0, -50%); }
+  .quiz-input-item {
+    position: relative; }
+    .quiz-input-item input[type="text"] {
+      width: 779px;
+      border: 1px solid #e8e8e8;
+      font-family: "Avenir Next Cyr Regular", sans-serif;
+      color: #1f1c1c;
+      font-size: 18px;
+      line-height: 26px;
+      padding: 20px; }
+    .quiz-input-item label {
       color: #1f1c1c;
       font-size: 18px;
       line-height: 26px; }
+    .quiz-input-item .text-label {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%); }
+  .quiz-radios {
+    display: -webkit-box;
+    display: flex; }
+    .quiz-radios-column {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      width: 50%; }
+    .quiz-radios-row {
+      display: -webkit-box;
+      display: flex; }
+    .quiz-radios-item {
+      margin-bottom: 21px; }
+      .quiz-radios-item label {
+        color: #1f1c1c;
+        font-size: 18px;
+        line-height: 26px; }
   .quiz-btns {
     display: -webkit-box;
     display: flex;
@@ -1548,7 +1634,7 @@ body {
     color: #1f1c1c;
     font-family: "Avenir Next Cyr Medium", sans-serif;
     font-size: 32px;
-    line-height: 26px;
+    line-height: 40px;
     margin: 0;
     margin-bottom: 33px; }
   .quiz-comment {
@@ -1575,42 +1661,15 @@ body {
       color: #ffffff;
       font-size: 14px;
       line-height: 20px; }
-  .quiz--second-slide .quiz-answers {
-    -webkit-box-pack: start;
-            justify-content: flex-start; }
-  .quiz--second-slide .quiz-item {
-    margin-bottom: 0; }
-  .quiz--second-slide .quiz-column {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row; }
-  .quiz--second-slide .quiz-item {
-    margin-right: 26px;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row; }
-    .quiz--second-slide .quiz-item .jq-radio {
-      display: -webkit-box;
-      display: flex;
-      align-self: flex-end; }
-    .quiz--second-slide .quiz-item label {
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-              flex-direction: column-reverse;
-      color: #1f1c1c;
-      font-size: 18px;
-      line-height: 26px;
-      cursor: pointer;
-      margin-bottom: -4px; }
-      .quiz--second-slide .quiz-item label img {
-        margin-left: -24px;
-        cursor: pointer;
-        margin-bottom: 10px;
-        pointer-events: none; }
+  .quiz--first-slide .quiz-btn--prev, .quiz--second-slide .quiz-btn--prev, .quiz--third-slide .quiz-btn--prev, .quiz--fifth-slide .quiz-btn--prev {
+    font-family: "Avenir Next Cyr Regular", sans-serif;
+    border: 2px solid #f4f4f6;
+    color: #1f1c1c; }
+  .quiz--first-slide .quiz-btn--next, .quiz--second-slide .quiz-btn--next, .quiz--third-slide .quiz-btn--next, .quiz--fifth-slide .quiz-btn--next {
+    font-family: "Avenir Next Cyr Regular", sans-serif;
+    border: 2px solid #86c4ff;
+    background-color: #86c4ff;
+    color: #ffffff; }
 
 .main-slide {
   position: relative;
@@ -1621,6 +1680,7 @@ body {
   background-image: url("../img/main-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   -webkit-box-pack: end;
           justify-content: flex-end; }
   .main-slide::before {
@@ -1744,7 +1804,7 @@ body {
   cursor: pointer;
   color: #86c4ff;
   border: none;
-  border-radius: 24px;
+  border-radius: 27px;
   background-color: #ffffff;
   font-family: "Avenir Next Cyr Demi", sans-serif;
   font-size: 24px;

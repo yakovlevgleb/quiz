@@ -28,6 +28,8 @@ body {
 }
 
 .jq-radio {
+  display: inline-block;
+  vertical-align: sub;
 	width: 16px;
 	height: 16px;
 	margin-right: 11px;
@@ -80,7 +82,7 @@ body {
 	left: 50%;
 
 	width: 1170px;
-	height: 445px;
+	height: 485px;
 	margin: 0 auto;
 
 	transform: translate(-50%, -50%);
@@ -91,23 +93,10 @@ body {
 	height: 100%;
 	max-height: 485px;
 
-	&-answers {
-		display: flex;
-
-		justify-content: space-between;
-
-    padding-right: 119px;
-	}
-
-
-
-	&-column {
-		display: flex;
-		flex-direction: column;
-	}
-
 	&--first-slide,
-	&--second-slide {
+	&--second-slide,
+  &--third-slide,
+  &--fifth-slide {
 		position: relative;
 
 		display: flex;
@@ -119,26 +108,137 @@ body {
 
 		justify-content: space-between;
 	}
+
 	&-form {
 		display: flex;
 		flex-direction: column;
 
+    justify-content: space-between;
+
 		width: 870px;
 		padding: 58px;
 		padding-right: 30px;
+    padding-bottom: 40px;
 
 		border: 1px solid #e8e8e8;
 		border-right: none;
 	}
 
-	&-item {
-		margin-bottom: 21px;
-		label {
-			color: $form-text-color;
-			font-size: 18px;
-			line-height: 26px;
-		}
-	}
+  &-img-radios {
+    display: flex;
+
+    &-column {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+    }
+
+    &-row {
+      display: flex;
+    }
+
+    &-item {
+      margin-right: 26px;
+      display: flex;
+      flex-direction: row;
+  		label {
+  			color: $form-text-color;
+  			font-size: 18px;
+  			line-height: 26px;
+  		}
+
+      input[type="text"] {
+        width: 779px;
+        border: 1px solid #e8e8e8;
+        font-family: $regular;
+        color: $form-text-color;
+        font-size: 18px;
+        line-height: 26px;
+        padding: 20px;
+       }
+
+       label {
+         display: flex;
+         flex-direction: column-reverse;
+         color: $form-text-color;
+         font-size: 18px;
+         line-height: 26px;
+         cursor: pointer;
+         margin-bottom: -4px;
+
+         img {
+           margin-left: -24px;
+           cursor: pointer;
+           margin-bottom: 10px;
+           pointer-events: none;
+         }
+
+       }
+
+       .jq-radio {
+   				display: flex;
+   				align-self: flex-end;
+   			}
+       .text-label {
+         position: absolute;
+         top: 50%;
+         left: 20px;
+         transform: translate(0, -50%);
+       }
+  	}
+  }
+
+  &-input {
+    &-item {
+      position: relative;
+      input[type="text"] {
+        width: 779px;
+        border: 1px solid #e8e8e8;
+        font-family: $regular;
+        color: $form-text-color;
+        font-size: 18px;
+        line-height: 26px;
+        padding: 20px;
+       }
+
+       label {
+         color: $form-text-color;
+         font-size: 18px;
+         line-height: 26px;
+       }
+
+       .text-label {
+         position: absolute;
+         top: 50%;
+         left: 20px;
+         transform: translate(0, -50%);
+       }
+    }
+  }
+
+  &-radios {
+    display: flex;
+
+    &-column {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+
+    &-row {
+      display: flex;
+    }
+
+    &-item {
+  		margin-bottom: 21px;
+
+      label {
+        color: $form-text-color;
+        font-size: 18px;
+        line-height: 26px;
+      }
+  	}
+  }
 
 	&-btns {
 		display: flex;
@@ -250,7 +350,7 @@ body {
 
 		font-family: $medium;
 		font-size: 32px;
-		line-height: 26px;
+		line-height: 40px;
 		margin: 0;
 		margin-bottom: 33px;
 	}
@@ -298,48 +398,24 @@ body {
 		}
 	}
 
-	&--second-slide {
-		.quiz-answers {
-			justify-content: flex-start;
-		}
+  &--first-slide,
+  &--second-slide,
+  &--third-slide,
+  &--fifth-slide {
+    .quiz-btn--prev {
+      font-family: $regular;
+      border: 2px solid #f4f4f6;
+      color: $form-text-color;
+    }
 
-		.quiz-item {
-			margin-bottom: 0;
-		}
-		.quiz-column {
-			flex-direction: row;
-		}
+    .quiz-btn--next {
+      font-family: $regular;
+      border: 2px solid $main-bg-content;
+      background-color: $main-bg-content;
+      color: $main-font-color;
+    }
+  }
 
-
-		.quiz-item {
-			margin-right: 26px;
-			display: flex;
-			flex-direction: row;
-
-			.jq-radio {
-				display: flex;
-				align-self: flex-end;
-			}
-
-			label {
-				display: flex;
-				flex-direction: column-reverse;
-				color: $form-text-color;
-				font-size: 18px;
-				line-height: 26px;
-				cursor: pointer;
-				margin-bottom: -4px;
-
-				img {
-					margin-left: -24px;
-					cursor: pointer;
-					margin-bottom: 10px;
-					pointer-events: none;
-				}
-
-			}
-		}
-	}
 }
 
 .main-slide {
@@ -353,6 +429,7 @@ body {
 	background-image: url("../img/main-bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+  background-size: cover;
 
 	justify-content: flex-end;
 
@@ -528,7 +605,7 @@ body {
 
 	color: $btn-text-color;
 	border: none;
-	border-radius: 24px;
+	border-radius: 27px;
 	background-color: #ffffff;
 
 	font-family: $demi;

@@ -23,22 +23,23 @@ html(lang="ru")
 							button(type="button").main-slide__btn.btn Начать тест
 				.quiz.quiz--first-slide
 					form.quiz-form
-						p.quiz-question Как часто вы едите кашу утром?
-						.quiz-answers
-							.quiz-column
-								.quiz-item
-									input(type="radio", id="radio1", data-type="radio", name="radio1", value="Каждый день")
-									label(for="radio1") Каждый день
-								.quiz-item
-									input(type="radio", id="radio2", data-type="radio", name="radio1", value="Пару раз в месяц")
-									label(for="radio2") Один-два раза в неделю
-							.quiz-column
-								.quiz-item
-									input(type="radio", id="radio3", data-type="radio", name="radio1", value="Один-два раза в неделю")
-									label(for="radio3") Пару раз в месяц
-								.quiz-item
-									input(type="radio", id="radio4", data-type="radio", name="radio1", value="Не ем кашу вообще никогда")
-									label(for="radio4") Не ем кашу вообще никогда
+						.form-container
+							p.quiz-question Как часто вы едите кашу утром?
+							.quiz-radios
+								.quiz-radios-column
+									.quiz-radios-item
+										input(type="radio", id="radio1", data-type="radio", name="radio1", value="Каждый день")
+										label(for="radio1") Каждый день
+									.quiz-radios-item
+										input(type="radio", id="radio2", data-type="radio", name="radio1", value="Пару раз в месяц")
+										label(for="radio2") Один-два раза в неделю
+								.quiz-radios-column
+									.quiz-radios-item
+										input(type="radio", id="radio3", data-type="radio", name="radio1", value="Один-два раза в неделю")
+										label(for="radio3") Пару раз в месяц
+									.quiz-radios-item
+										input(type="radio", id="radio4", data-type="radio", name="radio1", value="Не ем кашу вообще никогда")
+										label(for="radio4") Не ем кашу вообще никогда
 						.quiz-progress
 							.quiz-btns
 								button(type="button").quiz-btn.quiz-btn--prev.btn Назад
@@ -52,26 +53,82 @@ html(lang="ru")
 						blockquote.quiz-comment__text Известно, что присутствие в ежедневном рационе цельных злаков и круп значительно улучшает работу кишечника, уменьшает опасность запоров, восстанавливает структуру кожи, делая ее гладкой, как у младенца.
 				.quiz.quiz--second-slide
 					form.quiz-form
-						p.quiz-question Какая каша вам нравится больше всего?
-						.quiz-answers
-							.quiz-column
-								.quiz-item
-									input(type="radio", id="radio1", data-type="radio", name="radio1", value="Овсяная")
-									label(for="radio1") Овсяная
-										img(src="/img/img1.jpg", alt="Овсяная")
-								.quiz-item
-									input(type="radio", id="radio2", data-type="radio", name="radio1", value="Манная")
-									label(for="radio2") Манная
-										img(src="/img/img2.jpg", alt="Манная")
-							.quiz-column
-								.quiz-item
-									input(type="radio", id="radio3", data-type="radio", name="radio1", value="Гречневая")
-									label(for="radio3") Гречневая
-										img(src="/img/img3.jpg", alt="Гречневая")
-								.quiz-item
-									input(type="radio", id="radio4", data-type="radio", name="radio1", value="Рисовая")
-									label(for="radio4") Рисовая
-										img(src="/img/img4.jpg", alt="Рисовая")
+						.form-container
+							p.quiz-question Какая каша вам нравится больше всего?
+							.quiz-img-radios
+								.quiz-img-radios-column
+									.quiz-img-radios-item
+										input(type="radio", id="radio5", data-type="radio", name="radio1", value="Овсяная")
+										label(for="radio5") Овсяная
+											img(src="/img/img1.jpg", alt="Овсяная")
+									.quiz-img-radios-item
+										input(type="radio", id="radio6", data-type="radio", name="radio1", value="Манная")
+										label(for="radio6") Манная
+											img(src="/img/img2.jpg", alt="Манная")
+								.quiz-img-radios-column
+									.quiz-img-radios-item
+										input(type="radio", id="radio7", data-type="radio", name="radio1", value="Гречневая")
+										label(for="radio7") Гречневая
+											img(src="/img/img3.jpg", alt="Гречневая")
+									.quiz-img-radios-item
+										input(type="radio", id="radio8", data-type="radio", name="radio1", value="Рисовая")
+										label(for="radio8") Рисовая
+											img(src="/img/img4.jpg", alt="Рисовая")
+						.quiz-progress
+							.quiz-btns
+								button(type="button").quiz-btn.quiz-btn--prev.btn Назад
+								span вопрос 1/5
+								button(type="button").quiz-btn.quiz-btn--next.btn Далее
+							progress(value="20" max="100")
+					.quiz-comment
+						img(src="img/face.jpg", alt="")
+						span.quiz-comment__name Вероника Петрова
+						span.quiz-comment__post диетолог
+						blockquote.quiz-comment__text Известно, что присутствие в ежедневном рационе цельных злаков и круп значительно улучшает работу кишечника, уменьшает опасность запоров, восстанавливает структуру кожи, делая ее гладкой, как у младенца.
+				.quiz.quiz--third-slide
+					form.quiz-form
+						.form-container
+							p.quiz-question После завтрака с кашей вы чувствуете себя лучше, чем обычно?
+							.quiz-input
+								.quiz-input-row
+									.quiz-input-item
+										input(type="text", id="text1", name="text1")
+										label(for="text1").text-label Свой ответ на вопрос
+						.quiz-progress
+							.quiz-btns
+								button(type="button").quiz-btn.quiz-btn--prev.btn Назад
+								span вопрос 1/5
+								button(type="button").quiz-btn.quiz-btn--next.btn Далее
+							progress(value="20" max="100")
+					.quiz-comment
+						img(src="img/face.jpg", alt="")
+						span.quiz-comment__name Вероника Петрова
+						span.quiz-comment__post диетолог
+						blockquote.quiz-comment__text Известно, что присутствие в ежедневном рационе цельных злаков и круп значительно улучшает работу кишечника, уменьшает опасность запоров, восстанавливает структуру кожи, делая ее гладкой, как у младенца.
+				.quiz.quiz--fifth-slide
+					form.quiz-form
+						.form-container
+							p.quiz-question После завтрака с кашей вы чувствуете себя лучше, чем обычно?
+							.quiz-radios
+								.quiz-radios-column
+									.quiz-radios-item
+										input(type="radio", id="radio1", data-type="radio", name="radio1", value="Каждый день")
+										label(for="radio1") Каждый день
+									.quiz-radios-item
+										input(type="radio", id="radio2", data-type="radio", name="radio1", value="Пару раз в месяц")
+										label(for="radio2") Один-два раза в неделю
+								.quiz-radios-column
+									.quiz-radios-item
+										input(type="radio", id="radio3", data-type="radio", name="radio1", value="Один-два раза в неделю")
+										label(for="radio3") Пару раз в месяц
+									.quiz-radios-item
+										input(type="radio", id="radio4", data-type="radio", name="radio1", value="Не ем кашу вообще никогда")
+										label(for="radio4") Не ем кашу вообще никогда
+							.quiz-input
+								.quiz-input-row
+									.quiz-input-item
+										input(type="text", id="text1", name="text1")
+										label(for="text1").text-label Свой ответ на вопрос
 						.quiz-progress
 							.quiz-btns
 								button(type="button").quiz-btn.quiz-btn--prev.btn Назад
