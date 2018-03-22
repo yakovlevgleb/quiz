@@ -1403,7 +1403,7 @@ body {
 .jq-radio {
   width: 16px;
   height: 16px;
-  margin-right: 9px;
+  margin-right: 11px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   border: 1px solid #dfdfdf;
@@ -1451,20 +1451,20 @@ body {
 .quiz {
   max-width: 1170px;
   height: 100%;
-  max-height: 445px; }
+  max-height: 485px; }
   .quiz-answers {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
             justify-content: space-between;
-    padding-right: 150px; }
+    padding-right: 119px; }
   .quiz-column {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column; }
-  .quiz-first-slide {
+  .quiz--first-slide, .quiz--second-slide {
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -1480,14 +1480,12 @@ body {
     -webkit-box-direction: normal;
             flex-direction: column;
     width: 870px;
-    padding: 60px;
+    padding: 58px;
     padding-right: 30px;
     border: 1px solid #e8e8e8;
-    border-right: none;
-    -webkit-box-pack: justify;
-            justify-content: space-between; }
+    border-right: none; }
   .quiz-item {
-    margin-bottom: 28px; }
+    margin-bottom: 21px; }
     .quiz-item label {
       color: #1f1c1c;
       font-size: 18px;
@@ -1496,7 +1494,8 @@ body {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    margin-bottom: 20px; }
     .quiz-btns span {
       font-family: "Avenir Next Cyr Medium", sans-serif;
       font-size: 20px;
@@ -1549,7 +1548,9 @@ body {
     color: #1f1c1c;
     font-family: "Avenir Next Cyr Medium", sans-serif;
     font-size: 32px;
-    line-height: 26px; }
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 33px; }
   .quiz-comment {
     width: 300px;
     padding: 30px 40px;
@@ -1574,6 +1575,42 @@ body {
       color: #ffffff;
       font-size: 14px;
       line-height: 20px; }
+  .quiz--second-slide .quiz-answers {
+    -webkit-box-pack: start;
+            justify-content: flex-start; }
+  .quiz--second-slide .quiz-item {
+    margin-bottom: 0; }
+  .quiz--second-slide .quiz-column {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row; }
+  .quiz--second-slide .quiz-item {
+    margin-right: 26px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row; }
+    .quiz--second-slide .quiz-item .jq-radio {
+      display: -webkit-box;
+      display: flex;
+      align-self: flex-end; }
+    .quiz--second-slide .quiz-item label {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+              flex-direction: column-reverse;
+      color: #1f1c1c;
+      font-size: 18px;
+      line-height: 26px;
+      cursor: pointer;
+      margin-bottom: -4px; }
+      .quiz--second-slide .quiz-item label img {
+        margin-left: -24px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        pointer-events: none; }
 
 .main-slide {
   position: relative;
@@ -1609,14 +1646,15 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
-    width: 800px;
+    width: 801px;
     padding: 60px;
+    padding-left: 57px;
     background-color: #86c4ff; }
   .main-slide .bg-white {
     background-color: rgba(255, 255, 255, 0.2); }
   .main-slide-header {
     position: relative;
-    margin-bottom: 45px; }
+    margin-bottom: 35px; }
     .main-slide-header p {
       margin: 0;
       color: #ffffff;
@@ -1628,10 +1666,14 @@ body {
         text-transform: uppercase;
         font-family: "Avenir Next Cyr Bold", sans-serif;
         font-size: 26px;
-        line-height: 30px; }
+        line-height: 30px;
+        line-height: 38px;
+        padding-left: 7px;
+        margin-left: 7px;
+        padding-right: 10px; }
     .main-slide-header::after {
       position: absolute;
-      bottom: -25px;
+      bottom: -24px;
       left: 0;
       width: 100%;
       height: 2px;
@@ -1639,6 +1681,7 @@ body {
       background-color: rgba(255, 255, 255, 0.2); }
   .main-slide__title {
     margin: 0;
+    margin-bottom: 17px;
     color: #ffffff;
     font-family: "Avenir Next Cyr Bold", sans-serif;
     font-size: 46.67px;
@@ -1649,19 +1692,18 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     padding: 0;
     list-style: none; }
-  .main-slide-item {
-    margin-bottom: 9px; }
-    .main-slide-item:nth-last-child(1) {
-      margin-bottom: 0; }
-    .main-slide-item span {
-      padding: 8px 10px;
-      color: #ffffff;
-      font-family: "Avenir Next Cyr Medium", sans-serif;
-      font-size: 20px;
-      line-height: 42px; }
+  .main-slide-item:nth-last-child(1) {
+    margin-bottom: 0; }
+  .main-slide-item span {
+    padding: 5px 10px;
+    padding-left: 12px;
+    color: #ffffff;
+    font-family: "Avenir Next Cyr Medium", sans-serif;
+    font-size: 20px;
+    line-height: 42px; }
   .main-slide-main {
     position: relative; }
     .main-slide-main::before {
@@ -1706,4 +1748,5 @@ body {
   background-color: #ffffff;
   font-family: "Avenir Next Cyr Demi", sans-serif;
   font-size: 24px;
-  line-height: 26px; }
+  line-height: 26px;
+  margin-left: 4px; }
