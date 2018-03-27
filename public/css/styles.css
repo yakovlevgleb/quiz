@@ -1446,6 +1446,8 @@ body {
   width: 16px;
   height: 16px;
   border: 1px solid #ffffff; }
+  .jq-checkbox.warning {
+    border-color: red; }
   .jq-checkbox:after {
     position: absolute;
     top: 50%;
@@ -1624,6 +1626,8 @@ body {
       font-family: "Avenir Next Cyr Regular", sans-serif;
       font-size: 18px;
       line-height: 26px; }
+      .quiz-input-item input[type="text"].warning {
+        border-color: red; }
     .quiz-input-item label {
       color: #1f1c1c;
       font-size: 18px;
@@ -1989,7 +1993,10 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   font-family: "Avenir Next Cyr Regular", sans-serif;
   font-size: 18px;
-  line-height: 26px; }
+  line-height: 26px;
+  border: 1px solid transparent; }
+  .contacts-form__input.warning {
+    border: 1px solid red; }
 
 .contacts-form__checkbox-label {
   color: #ffffff;
@@ -2002,3 +2009,22 @@ body {
 .show {
   display: -webkit-box;
   display: flex; }
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .wrapper {
+    width: auto;
+    height: auto; }
+  .quiz {
+    max-height: inherit;
+    height: auto;
+    max-width: inherit; }
+    .quiz-form {
+      width: auto; }
+    .quiz-comment {
+      display: none; }
+    .quiz-radios {
+      flex-wrap: wrap; }
+      .quiz-radios-column {
+        width: 100%; }
+  .main-slide-content {
+    width: auto; } }

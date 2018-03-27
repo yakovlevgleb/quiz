@@ -44,7 +44,7 @@ html(lang="ru")
 							.quiz-btns
 								button(type="button").quiz-btn.quiz-btn--prev.btn Назад
 								span вопрос 1/5
-								button(type="button").quiz-btn.quiz-btn--next.btn Далее
+								button(type="submit").quiz-btn.quiz-btn--next.btn Далее
 							progress(value="20" max="100")
 					.quiz-comment
 						img(src="img/face.jpg", alt="")
@@ -78,7 +78,7 @@ html(lang="ru")
 							.quiz-btns
 								button(type="button").quiz-btn.quiz-btn--prev.btn Назад
 								span вопрос 1/5
-								button(type="button").quiz-btn.quiz-btn--next.btn Далее
+								button(type="submit").quiz-btn.quiz-btn--next.btn Далее
 							progress(value="20" max="100")
 					.quiz-comment
 						img(src="img/face.jpg", alt="")
@@ -98,7 +98,7 @@ html(lang="ru")
 							.quiz-btns
 								button(type="button").quiz-btn.quiz-btn--prev.btn Назад
 								span вопрос 1/5
-								button(type="button").quiz-btn.quiz-btn--next.btn Далее
+								button(type="submit").quiz-btn.quiz-btn--next.btn Далее
 							progress(value="20" max="100")
 					.quiz-comment
 						img(src="img/face.jpg", alt="")
@@ -112,28 +112,28 @@ html(lang="ru")
 							.quiz-radios
 								.quiz-radios-column
 									.quiz-radios-item
-										input(type="radio", id="radio1", data-type="radio", name="radio1" , data-req='req', value="Каждый день")
-										label(for="radio1") С орехами
+										input(type="radio", id="radio12", data-type="radio", name="radio1" , data-req='req', value="Каждый день")
+										label(for="radio12") С орехами
 									.quiz-radios-item
-										input(type="radio", id="radio2", data-type="radio", name="radio1" , data-req='req', value="Пару раз в месяц")
-										label(for="radio2") С фруктами
+										input(type="radio", id="radio9", data-type="radio", name="radio1" , data-req='req', value="Пару раз в месяц")
+										label(for="radio9") С фруктами
 								.quiz-radios-column
 									.quiz-radios-item
-										input(type="radio", id="radio3", data-type="radio", name="radio1" , data-req='req', value="Один-два раза в неделю")
-										label(for="radio3") Без добавок
+										input(type="radio", id="radio10", data-type="radio", name="radio1" , data-req='req', value="Один-два раза в неделю")
+										label(for="radio10") Без добавок
 									.quiz-radios-item
-										input(type="radio", id="radio4", data-type="radio", name="radio1" , data-req='req', value="Не ем кашу вообще никогда")
-										label(for="radio4") С джемом
+										input(type="radio", id="radio11", data-type="radio", name="radio1" , data-req='req', value="Не ем кашу вообще никогда")
+										label(for="radio11") С джемом
 							.quiz-input
 								.quiz-input-row
 									.quiz-input-item
-										input(type="text", id="text1", name="text1", data-req='req')
-										label(for="text1").text-label Свой ответ на вопрос
+										input(type="text", id="text2", name="text1", data-req='req')
+										label(for="text2").text-label Свой ответ на вопрос
 						.quiz-progress
 							.quiz-btns
 								button(type="button").quiz-btn.quiz-btn--prev.btn Назад
 								span вопрос 1/5
-								button(type="button").quiz-btn.quiz-btn--next.btn Далее
+								button(type="submit").quiz-btn.quiz-btn--next.btn Далее
 							progress(value="20" max="100")
 					.quiz-comment
 						img(src="img/face.jpg", alt="")
@@ -164,7 +164,7 @@ html(lang="ru")
 									input#name(type="text", data-req='req').contacts-form__input.contacts-form__input--name
 								.contacts-form-elem
 									label(for="phone") Ваш телефон
-									input#phone(type="text", data-req='req', data-type='mobile').contacts-form__input.contacts-form__input.contacts-form__input--phone
+									input#phone(type="text", data-req='req', data-type='mobile').js-phone.contacts-form__input.contacts-form__input.contacts-form__input--phone
 								.contacts-form-elem
 									label(for="email") Ваш e-mail
 									input#email(type="text", data-req='req', data-type='email').contacts-form__input.contacts-form__input.contacts-form__input--email
@@ -173,5 +173,5 @@ html(lang="ru")
 									input#personal_p5(type='checkbox', name='accuracy', data-req='req', data-type='checkbox').contact-form__checkbox
 									label.contacts-form__checkbox-label(for='personal_p5') Согласен на &nbsp;
 										a(href='#') обработку персональных данных
-									button(type="button").contacts-form__btn.btn Забрать подарки
+									button(type="submit").contacts-form__btn.btn Забрать подарки
 		+footer

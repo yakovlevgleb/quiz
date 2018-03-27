@@ -95,6 +95,10 @@ body {
 
 	border: 1px solid #ffffff;
 
+	&.warning {
+		border-color: red;
+	}
+
 	&:after {
 		position: absolute;
 		top: 50%;
@@ -373,6 +377,10 @@ body {
 				font-family: $regular;
 				font-size: 18px;
 				line-height: 26px;
+
+				&.warning {
+					border-color: red;
+				}
 			}
 
 			label {
@@ -981,6 +989,12 @@ body {
 		font-family: $regular;
 		font-size: 18px;
 		line-height: 26px;
+
+		border: 1px solid transparent;
+
+		&.warning {
+			border: 1px solid red;
+		}
 	}
 
 	&__checkbox-label {
@@ -995,15 +1009,35 @@ body {
 	}
 }
 
-// .main-slide,
-// .quiz.quiz--first-slide,
-// .quiz.quiz--second-slide,
-// .quiz.quiz--third-slide,
-// .quiz.quiz--fifth-slide,
-// .last-slide {
-// 	display: none;
-// }
-
 .show {
 	display: flex;
+}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+	.wrapper {
+		width: auto;
+		height: auto;
+	}
+
+	.quiz {
+		max-height:inherit;
+		height: auto;
+		max-width: inherit;
+		&-form {
+			width: auto;
+		}
+		&-comment {
+			display: none;
+		}
+		&-radios {
+			flex-wrap: wrap;
+			&-column {
+				width: 100%;
+			}
+		}
+	}
+	
+	.main-slide-content {
+		width: auto;
+	}
 }
