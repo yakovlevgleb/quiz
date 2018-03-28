@@ -115,7 +115,7 @@ body {
 		        transform: translate(-50%, -50%);
 
 		opacity: 0;
-		background-image: url("/img/checked.png");
+		background-image: url("../img/checked.png");
 	}
 
 	&.checked {
@@ -142,6 +142,7 @@ body {
 	border-radius: 27px;
 	background-color: #ffffff;
 	border: 1px solid $main-bg-content;
+	outline: none;
 
 	font-family: $demi;
 	font-size: 24px;
@@ -226,7 +227,6 @@ body {
 		display: flex;
 
 		height: 100%;
-		margin-bottom: 50px;
 
 		background-color: #ffffff;
 
@@ -571,6 +571,7 @@ body {
 	&-comment {
 		width: 300px;
 		padding: 30px 40px;
+		padding-bottom: 85px;
 
 		background-color: $main-bg-content;
 
@@ -578,6 +579,8 @@ body {
 			margin-bottom: 18px;
 
 			border-radius: 50%;
+			max-width: 103px;
+			max-height: 103px;
 		}
 
 		&__name {
@@ -622,7 +625,6 @@ body {
 	display: flex;
 
 	height: 100%;
-	margin-bottom: 50px;
 
 	background-image: url("../img/main-bg.jpg");
 	background-repeat: no-repeat;
@@ -649,13 +651,6 @@ body {
 
 		opacity: 0.4;
 		background-image: url("../img/present.png");
-	}
-
-	&:hover {
-		&::before {
-			-webkit-transform: scale(0.5) rotate(360deg);
-			        transform: scale(0.5) rotate(360deg);
-		}
 	}
 
 	&-content {
@@ -790,21 +785,10 @@ body {
 			        transition: all 2s ease-in-out;
 			-webkit-transform: scale(0.7) rotate(165deg);
 			        transform: scale(0.7) rotate(165deg);
+			will-change: transform;
 
 			opacity: 0.4;
 			background-image: url("../img/present.png");
-		}
-
-		&:hover {
-			&::before {
-				-webkit-transform: rotate(360deg);
-				        transform: rotate(360deg);
-			}
-
-			&::after {
-				-webkit-transform: scale(0.7) rotate(360deg);
-				        transform: scale(0.7) rotate(360deg);
-			}
 		}
 	}
 }
@@ -819,7 +803,6 @@ body {
 	    flex-direction: column;
 
 	height: 100%;
-	margin-bottom: 50px;
 	padding: 53px 58px;
   padding-bottom: 46px;
 	padding-right: 62px;
@@ -932,12 +915,17 @@ body {
 		-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
 		justify-content: space-between;
+
+		&--submit {
+			justify-content: center;
+		}
 	}
 
 	&__btn {
     padding: 12px 32px;
 		font-size: 18px;
 		line-height: 26px;
+		margin-top: 30px;
 	}
 	&-elem {
 		position: relative;
@@ -959,8 +947,6 @@ body {
 			flex-direction: row;
 
 			padding-top: 30px;
-
-			margin: 0 auto;
 
 			.jq-checkbox {
 				margin-right: 11px;
@@ -1003,8 +989,18 @@ body {
 		font-size: 16px;
 		line-height: 20px;
 		margin-right: 20px;
+
 		a {
 			color: $main-font-color;
+			text-decoration: none;
+			border-bottom: 1px solid #ffffff;
+
+			-webkit-transition: all 0.2s ease-in-out;
+							transition: all 0.2s ease-in-out;
+
+			&:hover {
+				border-bottom: 1px solid transparent;
+			}
 		}
 	}
 }
@@ -1013,21 +1009,64 @@ body {
 	display: flex;
 }
 
-@media screen and (min-width: 0) and (max-width: 768px) {
+@media screen and (min-width: 0) and (max-width: 1100px) {
+
+	.wrapper,
+	.main-slide,
+	.last-slide,
+	.quiz--first-slide,
+	.quiz--second-slide,
+	.quiz--third-slide,
+	.quiz--fifth-slide {
+		height: 700px;
+	}
+
 	.wrapper {
 		width: auto;
-		height: auto;
+
+	}
+
+	.main-slide {
+		justify-content: flex-start;
+		background: none;
+
+		&-header {
+			.bg-white {
+				display: inline-block;
+				margin: 0;
+			}
+		}
+		&-content {
+			padding: 30px;
+		}
 	}
 
 	.quiz {
-		max-height:inherit;
-		height: auto;
-		max-width: inherit;
+		max-width: 480px;
 		&-form {
 			width: auto;
+			padding: 30px;
 		}
 		&-comment {
 			display: none;
+		}
+		&-input{
+			&-item {
+				input[type="text"] {
+					width: 100%;
+				}
+			}
+		}
+		&-img{
+			&-radios {
+				&-item {
+					margin-bottom: 25px;
+					margin-right: 0;
+				}
+				&-column {
+					flex-wrap: wrap;
+				}
+			}
 		}
 		&-radios {
 			flex-wrap: wrap;
@@ -1036,8 +1075,39 @@ body {
 			}
 		}
 	}
-	
+
 	.main-slide-content {
 		width: auto;
+	}
+
+	.last-slide {
+		display: block;
+
+		&-results {
+			margin-bottom: 15px;
+		}
+		&-header {
+			flex-direction: column;
+		}
+		&-results {
+			max-width: inherit;
+		}
+	}
+
+	.contacts-form {
+		&-row {
+			flex-direction: column;
+		}
+
+		&-elem {
+			margin-bottom: 10px;
+			display: block;
+		}
+
+		&__checkbox-label {
+		}
+		&__btn {
+			display: inline-block;
+		}
 	}
 }

@@ -31,10 +31,18 @@ $(document).ready(function() {
         }
       });
 
-      $('.quiz-form').submit(function(e) {
-        if (!_th.checkForm($(this))) {
+      $('.quiz-btn--next').click(function() {
+        if (!_th.checkForm($('.owl-item.active .quiz-form'))) {
           return false;
+        } else {
+          $('.quiz').trigger('next.owl.carousel');
         }
+      });
+
+      $('.quiz').submit(function(e) {
+        if (!_th.checkForm($('.owl-item.active .last-slide'))) {
+          return false;
+        } // $.ajax({})
       });
     },
 
@@ -65,9 +73,9 @@ $(document).ready(function() {
               }
               break;
             case 'radio':
-							if (!$('.jq-radio').hasClass('checked')) {
-									$('.jq-radio').addClass('warning');
-									checkResult = false;
+              if (!$('.active').find('.jq-radio').hasClass('checked')) {
+                $(this).parent().addClass('warning');
+                checkResult = false;
               }
               break;
             case 'mobile':
@@ -85,6 +93,7 @@ $(document).ready(function() {
           }
         }
       });
+
       return checkResult;
     }
 
@@ -98,14 +107,44 @@ $(document).ready(function() {
     }
   });
 
-	$('.quiz-input-item input').on('click ,change, keyup', function() {
-		$(this).siblings('label').hide();
+  $('.quiz-input-item input').on('click ,change, keyup', function() {
+    $(this).siblings('label').hide();
 
-		if ($(this).val() === '') {
-			$(this).siblings('label').show();
-		}
-	});
+    if ($(this).val() === '') {
+      $(this).siblings('label').show();
+    }
+  });
+  $(function() {
+    $('.quiz').owlCarousel({
+      loop: false,
+      margin: 100,
+      nav: true,
+      items: 1,
+      mouseDrag: false,
+      touchDrag: false,
+      pullDrag: false,
+      onInitialized: counter,
+      onTranslated: counter,
 
+    })
+
+    function counter(event) {
+      var element = event.target;
+      var items = event.item.count - 2;
+      var item = event.item.index;
+      var persent = (100 / items) * event.item.index;
+      $('.active').find('#counter').html("вопрос " + item + "/" + items);
+      $('.active').find('progress').val(persent);
+    }
+  });
+
+  $('.main-slide__btn').click(function() {
+    $('.quiz').trigger('next.owl.carousel');
+  })
+
+  $('.quiz-btn--prev').click(function() {
+    $('.quiz').trigger('prev.owl.carousel');
+  })
 
   $('input, select').styler();
 });
