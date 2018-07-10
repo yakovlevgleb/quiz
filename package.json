@@ -1,27 +1,58 @@
 {
-  "name": "quiz",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.9.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-jade-inheritance": "^0.5.5",
-    "gulp-jade-template-concat": "0.0.4",
-    "gulp-sass": "^3.1.0"
-  },
-  "dependencies": {
-    "gulp-jade": "^1.1.0",
-    "gulp-scss": "^1.4.0",
-    "gulp-sourcemaps": "^2.6.1",
-    "npm": "^5.7.1"
-  }
+    "name": "quiz",
+    "version": "0.0.1",
+    "description": "quiz",
+    "scripts": {
+        "editorconfig": "editorconfig-cli",
+        "test": "npm run editorconfig",
+        "build": "gulp build",
+        "start": "npm run build && gulp serve"
+    },
+    "author": "Yakovlev Gleb <brin@yandex.ru>",
+    "homepage": "none",
+    "repository": "https://github.com/yakovlevgleb/geese",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^8.0.0",
+        "browser-sync": "^2.24.4",
+        "css-mqpacker": "^6.0.1",
+        "del": "^3.0.0",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^4.0.0",
+        "gulp-cleancss": "^0.2.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-jade-inheritance": "^0.5.5",
+        "gulp-jade-template-concat": "0.0.4",
+        "gulp-notify": "^3.2.0",
+        "gulp-plumber": "^1.2.0",
+        "gulp-postcss": "^7.0.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.1.0",
+        "postcss-object-fit-images": "^1.1.2",
+        "gulp-imagemin": "^4.1.0",
+        "imagemin-pngquant": "^5.1.0",
+        "gulp-uglify": "^3.0.0",
+        "gulp-wait": "^0.0.2",
+        "gulp-sequence": "^1.0.0"
+    },
+    "dependencies": {
+        "gulp-jade": "^1.1.0",
+        "gulp-scss": "^1.4.0",
+        "gulp-sourcemaps": "^2.6.1",
+        "npm": "^5.8.0"
+    },
+    "browserslist": [
+        ">0.25%",
+        "not ie 11",
+        "not op_mini all"
+    ],
+    "editorconfig-cli": [
+        "./static/jade/**/*.jade",
+        "./static/js/**/*.js",
+        "./static/img/**/*.svg",
+        "./static/scss/**/*.scss"
+    ],
+    "engines": {
+        "node": "^8.11"
+    }
 }

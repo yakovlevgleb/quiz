@@ -6,171 +6,185 @@ html(lang="ru")
 	body
 		.wrapper
 			form.quiz.owl-carousel
-				.main-slide.show
-					.main-slide-content
-						.main-slide-header
-							h1.main-slide__title Какая каша вам подходит?
-							p Пройдите тест и получите 
-								b.bg-white 3 подарка
-						.main-slide-main
-							ul.main-slide-list
-								li.main-slide-item
-									span.bg-white 10 полезных привычек питания
-								li.main-slide-item
-									span.bg-white Программа утренних тренировок
-								li.main-slide-item
-									span.bg-white Скидка 10% в «Healthy Food»
-							button(type="button").main-slide__btn.btn Начать тест
-				.quiz--first-slide
-					.quiz-form
-						.form-container
-							p.quiz-question Как часто вы едите кашу утром?
-							.quiz-radios
-								.quiz-radios-column
-									.quiz-radios-item
-										input(type="radio", id="radio1", data-type="radio", name="radio1", data-req='req', value="Каждый день")
-										label(for="radio1") Каждый день
-									.quiz-radios-item
-										input(type="radio", id="radio2", data-type="radio", name="radio1", data-req='req', value="Пару раз в месяц")
-										label(for="radio2") Один-два раза в неделю
-								.quiz-radios-column
-									.quiz-radios-item
-										input(type="radio", id="radio3", data-type="radio", name="radio1", data-req='req', value="Один-два раза в неделю")
-										label(for="radio3") Пару раз в месяц
-									.quiz-radios-item
-										input(type="radio", id="radio4", data-type="radio", name="radio1", data-req='req', value="Не ем кашу вообще никогда")
-										label(for="radio4") Не ем кашу вообще никогда
-						.quiz-progress
-							.quiz-btns
-								button(type="button").quiz-btn.quiz-btn--prev.btn Назад
-								span#counter
+				.main-slide.show(style="background-image: url('../img/main-bg.jpg');")
+					.main-slide__content
+						.main-slide__header
+							h1.main-slide__title Заголовок Квиза. Чтобы узнать вашу выгоду пройдите небольшой тест
+							p  Описание в несколько строчек, чтобы показать межстрочное расстояние подзаголовка
+						button(type="button").main-slide__btn.btn Пройти тест
+							
+				.quiz__first-slide
+					.form
+						.form__container
+							span.form__upper-text Узнайте какая стеллажная система лучше всего подойдет именно вам.
+							p.form__question Для каких помещений вам необходима стеллажная система?
+							span#counter.form__counter
+							.form__radios
+								.form__row
+									.form__radios-item
+										label(for="checkbox1").form__img
+											img(src="./img/img-1.jpg", alt="Дома (например, на балконе)")
+										.form__row
+											input(type="checkbox", id="checkbox1", data-type="checkbox", name="slide1" , data-req='req', value="Дома (например, на балконе)")
+											label(for="checkbox1") Дома (например, на балконе)
+											
+									.form__radios-item
+										label(for="checkbox1").form__img
+											img(src="./img/img-1.jpg", alt="Дома (например, на балконе)")
+										.form__row
+											input(type="checkbox", id="checkbox1", data-type="checkbox", name="slide1" , data-req='req', value="Дома (например, на балконе)")
+											label(for="checkbox1") Дома (например, на балконе)
+											
+									.form__radios-item
+										label(for="checkbox1").form__img
+											img(src="./img/img-1.jpg", alt="Дома (например, на балконе)")
+										.form__row
+											input(type="checkbox", id="checkbox1", data-type="checkbox", name="slide1" , data-req='req', value="Дома (например, на балконе)")
+											label(for="checkbox1") Дома (например, на балконе)
+											
+									.form__radios-item
+										label(for="checkbox1").form__img
+											img(src="./img/img-1.jpg", alt="Дома (например, на балконе)")
+										.form__row
+											input(type="checkbox", id="checkbox1", data-type="checkbox", name="slide1" , data-req='req', value="Дома (например, на балконе)")
+											label(for="checkbox1") Дома (например, на балконе)
+
+						.form__navigation
+							.form__btns
+								button(type="button").quiz-btn.quiz-btn--prev Назад
 								button(type="button").quiz-btn.quiz-btn--next.btn Далее
-							progress(value="20" max="100")
-					.quiz-comment
-						img(src="img/face.jpg", alt="")
-						span.quiz-comment__name Вероника Петрова
-						span.quiz-comment__post диетолог
-						blockquote.quiz-comment__text Известно, что присутствие в ежедневном рационе цельных злаков и круп значительно улучшает работу кишечника, уменьшает опасность запоров, восстанавливает структуру кожи, делая ее гладкой, как у младенца.
-				.quiz--second-slide
-					.quiz-form
-						.form-container
-							p.quiz-question Какая каша вам нравится больше всего?
-							.quiz-img-radios
-								.quiz-img-radios-column
-									.quiz-img-radios-item
-										input(type="radio", id="radio5", data-type="radio", name="radio2", data-req='req', value="Овсяная")
-										label(for="radio5") Овсяная
-											img(src="./img/img1.jpg", alt="Овсяная")
-									.quiz-img-radios-item
-										input(type="radio", id="radio6", data-type="radio", name="radio2", data-req='req', value="Манная")
-										label(for="radio6") Манная
-											img(src="./img/img2.jpg", alt="Манная")
-								.quiz-img-radios-column
-									.quiz-img-radios-item
-										input(type="radio", id="radio7", data-type="radio", name="radio2", data-req='req', value="Гречневая")
-										label(for="radio7") Гречневая
-											img(src="./img/img3.jpg", alt="Гречневая")
-									.quiz-img-radios-item
-										input(type="radio", id="radio8", data-type="radio", name="radio2", data-req='req', value="Рисовая")
-										label(for="radio8") Рисовая
-											img(src="./img/img4.jpg", alt="Рисовая")
-						.quiz-progress
-							.quiz-btns
-								button(type="button").quiz-btn.quiz-btn--prev.btn Назад
-								span#counter
-								button(type="button").quiz-btn.quiz-btn--next.btn Далее
-							progress(value="20" max="100")
-					.quiz-comment
-						img(src="img/face.jpg", alt="")
-						span.quiz-comment__name Вероника Петрова
-						span.quiz-comment__post диетолог
-						blockquote.quiz-comment__text Известно, что присутствие в ежедневном рационе цельных злаков и круп значительно улучшает работу кишечника, уменьшает опасность запоров, восстанавливает структуру кожи, делая ее гладкой, как у младенца.
-				.quiz--third-slide
-					.quiz-form
-						.form-container
-							p.quiz-question После завтрака с кашей вы чувствуете себя лучше, чем обычно?
-							.quiz-input
-								.quiz-input-row
-									.quiz-input-item
-										input(type="text", id="text1", name="text1", data-req='req')
-										label(for="text1").text-label Свой ответ на вопрос
-						.quiz-progress
-							.quiz-btns
-								button(type="button").quiz-btn.quiz-btn--prev.btn Назад
-								span#counter
-								button(type="button").quiz-btn.quiz-btn--next.btn Далее
-							progress(value="20" max="100")
-					.quiz-comment
-						img(src="img/face.jpg", alt="")
-						span.quiz-comment__name Вероника Петрова
-						span.quiz-comment__post диетолог
-						blockquote.quiz-comment__text Известно, что присутствие в ежедневном рационе цельных злаков и круп значительно улучшает работу кишечника, уменьшает опасность запоров, восстанавливает структуру кожи, делая ее гладкой, как у младенца.
-				.quiz--fifth-slide
-					.quiz-form
-						.form-container
-							p.quiz-question С чем вы больше любите есть кашу?
-							.quiz-radios
-								.quiz-radios-column
-									.quiz-radios-item
-										input(type="radio", id="radio12", data-type="radio", name="radio3" , data-req='req', value="Каждый день")
-										label(for="radio12") С орехами
-									.quiz-radios-item
-										input(type="radio", id="radio9", data-type="radio", name="radio3" , data-req='req', value="Пару раз в месяц")
-										label(for="radio9") С фруктами
-								.quiz-radios-column
-									.quiz-radios-item
-										input(type="radio", id="radio10", data-type="radio", name="radio3" , data-req='req', value="Один-два раза в неделю")
-										label(for="radio10") Без добавок
-									.quiz-radios-item
-										input(type="radio", id="radio11", data-type="radio", name="radio3" , data-req='req', value="Не ем кашу вообще никогда")
-										label(for="radio11") С джемом
-							.quiz-input
-								.quiz-input-row
-									.quiz-input-item
-										input(type="text", id="text2", name="text2", data-req='req')
-										label(for="text2").text-label Свой ответ на вопрос
-						.quiz-progress
-							.quiz-btns
-								button(type="button").quiz-btn.quiz-btn--prev.btn Назад
-								span#counter
-								button(type="button").quiz-btn.quiz-btn--next.btn Далее
-							progress(value="20" max="100")
-					.quiz-comment
-						img(src="img/face.jpg", alt="")
-						span.quiz-comment__name Вероника Петрова
-						span.quiz-comment__post диетолог
-						blockquote.quiz-comment__text Известно, что присутствие в ежедневном рационе цельных злаков и круп значительно улучшает работу кишечника, уменьшает опасность запоров, восстанавливает структуру кожи, делая ее гладкой, как у младенца.
-				.last-slide.mCustomScrollbar(data-mcs-theme="minimal")
-					.last-slide-header
-						.last-slide-results
-							p.last-slide__title Результат теста:
-								span Ваша идеальная каша - овсяная
-							p.last-slide__comment В крупе находятся натуральные антиоксиданты, повышающие иммунитет человека. Каша содержит кальций — микроэлемент, полезный для костей и зубов. 
-						.last-slide-presents
-							span.bg-white Ваши подарки:
-							ul.last-slide-list
-								li.last-slide-item
-									span 10 полезных привычек питания
-								li.last-slide-item
-									span программа утренних тренировок
-								li.last-slide-item
-									span скидка 10% в «Healthy Food»
-					.contacts-form
-						p.contacts-form__title Чтобы получить подарки, просто заполните форму!
-							.contacts-form-row
-								.contacts-form-elem
-									label(for="name")	Ваше имя
-									input#name(type="text", data-req='req').contacts-form__input.contacts-form__input--name
-								.contacts-form-elem
-									label(for="phone") Ваш телефон
-									input#phone(type="text", data-req='req', data-type='mobile').js-phone.contacts-form__input.contacts-form__input.contacts-form__input--phone
-								.contacts-form-elem
-									label(for="email") Ваш e-mail
-									input#email(type="text", data-req='req', data-type='email').contacts-form__input.contacts-form__input.contacts-form__input--email
-							.contacts-form-row.contacts-form-row--submit
-								.contacts-form-elem.contacts-form-elem--conf
-									input#personal_p5(type='checkbox', name='accuracy', data-req='req', data-type='checkbox').contact-form__checkbox
-									label.contacts-form__checkbox-label(for='personal_p5') Согласен на &nbsp;
-										a(href='#') обработку персональных данных
-								button(type="submit").contacts-form__btn.btn Забрать подарки
-		+footer
+					.quiz__comment.comment
+						.comment__author
+							img(src="img/face.jpg", alt="")
+							.comment__right
+								span.comment__name Светлана
+									br
+									| Рылеева
+								span.comment__post Консультант
+						blockquote.comment__text Геодезическая линия, в первом приближении, актаульна как никогда. Селекция бренда достижимо в разумные сроки. Как отмечает Майкл Мескон, ряд Тейлора позитивно программирует продвигаемый максимум. Уравнение в частных производных, безусловно, недостаточно порождает разрыв функции.
+						
+						
+					
+				//- .quiz--second-slide
+				//- 	.quiz-form
+				//- 		.form-container
+				//- 			p.quiz-question Какая каша вам нравится больше всего?
+				//- 			.quiz-img-radios
+				//- 				.quiz-img-radios-column
+				//- 					.quiz-img-radios-item
+				//- 						input(type="radio", id="radio5", data-type="radio", name="radio2", data-req='req', value="Овсяная")
+				//- 						label(for="radio5") Овсяная
+				//- 							img(src="./img/img1.jpg", alt="Овсяная")
+				//- 					.quiz-img-radios-item
+				//- 						input(type="radio", id="radio6", data-type="radio", name="radio2", data-req='req', value="Манная")
+				//- 						label(for="radio6") Манная
+				//- 							img(src="./img/img2.jpg", alt="Манная")
+				//- 				.quiz-img-radios-column
+				//- 					.quiz-img-radios-item
+				//- 						input(type="radio", id="radio7", data-type="radio", name="radio2", data-req='req', value="Гречневая")
+				//- 						label(for="radio7") Гречневая
+				//- 							img(src="./img/img3.jpg", alt="Гречневая")
+				//- 					.quiz-img-radios-item
+				//- 						input(type="radio", id="radio8", data-type="radio", name="radio2", data-req='req', value="Рисовая")
+				//- 						label(for="radio8") Рисовая
+				//- 							img(src="./img/img4.jpg", alt="Рисовая")
+				//- 		.quiz-progress
+				//- 			.quiz-btns
+				//- 				button(type="button").quiz-btn.quiz-btn--prev Назад
+				//- 				span#counter
+				//- 				button(type="button").quiz-btn.quiz-btn--next.btn Далее
+				//- 			progress(value="20" max="100")
+				//- 	.quiz-comment
+				//- 		img(src="img/face.jpg", alt="")
+				//- 		span.quiz-comment__name Вероника Петрова
+				//- 		span.quiz-comment__post диетолог
+				//- 		blockquote.quiz-comment__text Известно, что присутствие в ежедневном рационе цельных злаков и круп значительно улучшает работу кишечника, уменьшает опасность запоров, восстанавливает структуру кожи, делая ее гладкой, как у младенца.
+				//- .quiz--third-slide
+				//- 	.quiz-form
+				//- 		.form-container
+				//- 			p.quiz-question После завтрака с кашей вы чувствуете себя лучше, чем обычно?
+				//- 			.quiz-input
+				//- 				.quiz-input-row
+				//- 					.quiz-input-item
+				//- 						input(type="text", id="text1", name="text1", data-req='req')
+				//- 						label(for="text1").text-label Свой ответ на вопрос
+				//- 		.quiz-progress
+				//- 			.quiz-btns
+				//- 				button(type="button").quiz-btn.quiz-btn--prev.btn Назад
+				//- 				span#counter
+				//- 				button(type="button").quiz-btn.quiz-btn--next.btn Далее
+				//- 			progress(value="20" max="100")
+				//- 	.quiz-comment
+				//- 		img(src="img/face.jpg", alt="")
+				//- 		span.quiz-comment__name Вероника Петрова
+				//- 		span.quiz-comment__post диетолог
+				//- 		blockquote.quiz-comment__text Известно, что присутствие в ежедневном рационе цельных злаков и круп значительно улучшает работу кишечника, уменьшает опасность запоров, восстанавливает структуру кожи, делая ее гладкой, как у младенца.
+				//- .quiz--fifth-slide
+				//- 	.quiz-form
+				//- 		.form-container
+				//- 			p.quiz-question С чем вы больше любите есть кашу?
+				//- 			.quiz-radios
+				//- 				.quiz-radios-column
+				//- 					.quiz-radios-item
+				//- 						input(type="checkbox", id="checkbox1", data-type="checkbox", name="slide1" , data-req='req', value="Каждый день")
+				//- 						label(for="checkbox1") С орехами
+				//- 					.quiz-radios-item
+				//- 						input(type="checkbox", id="checkbox2", data-type="checkbox", name="slide1" , data-req='req', value="Пару раз в месяц")
+				//- 						label(for="checkbox2") С фруктами
+				//- 				.quiz-radios-column
+				//- 					.quiz-radios-item
+				//- 						input(type="checkbox", id="checkbox3", data-type="checkbox", name="slide1" , data-req='req', value="Один-два раза в неделю")
+				//- 						label(for="checkbox3") Без добавок
+				//- 					.quiz-radios-item
+				//- 						input(type="checkbox", id="checkbox4", data-type="checkbox", name="slide1" , data-req='req', value="Не ем кашу вообще никогда")
+				//- 						label(for="checkbox4") С джемом
+				//- 			.quiz-input
+				//- 				.quiz-input-row
+				//- 					.quiz-input-item
+				//- 						input(type="text", id="text2", name="text2", data-req='req')
+				//- 						label(for="text2").text-label Свой ответ на вопрос
+				//- 		.quiz-progress
+				//- 			.quiz-btns
+				//- 				button(type="button").quiz-btn.quiz-btn--prev.btn Назад
+				//- 				span#counter
+				//- 				button(type="button").quiz-btn.quiz-btn--next.btn Далее
+				//- 			progress(value="20" max="100")
+				//- 	.quiz-comment
+				//- 		img(src="img/face.jpg", alt="")
+				//- 		span.quiz-comment__name Вероника Петрова
+				//- 		span.quiz-comment__post диетолог
+				//- 		blockquote.quiz-comment__text Известно, что присутствие в ежедневном рационе цельных злаков и круп значительно улучшает работу кишечника, уменьшает опасность запоров, восстанавливает структуру кожи, делая ее гладкой, как у младенца.
+				//- .last-slide
+				//- 	.last-slide-header
+				//- 		.last-slide-results
+				//- 			p.last-slide__title Результат теста:
+				//- 				span Ваша идеальная каша - овсяная
+				//- 			p.last-slide__comment В крупе находятся натуральные антиоксиданты, повышающие иммунитет человека. Каша содержит кальций — микроэлемент, полезный для костей и зубов. 
+				//- 		.last-slide-presents
+				//- 			span.bg-white Ваши подарки:
+				//- 			ul.last-slide-list
+				//- 				li.last-slide-item
+				//- 					span 10 полезных привычек питания
+				//- 				li.last-slide-item
+				//- 					span программа утренних тренировок
+				//- 				li.last-slide-item
+				//- 					span скидка 10% в «Healthy Food»
+				//- 	.contacts-form
+				//- 		p.contacts-form__title Чтобы получить подарки, просто заполните форму!
+				//- 			.contacts-form-row
+				//- 				.contacts-form-elem
+				//- 					label(for="name")	Ваше имя
+				//- 					input#name(type="text", data-req='req').contacts-form__input.contacts-form__input--name
+				//- 				.contacts-form-elem
+				//- 					label(for="phone") Ваш телефон
+				//- 					input#phone(type="text", data-req='req', data-type='mobile').js-phone.contacts-form__input.contacts-form__input.contacts-form__input--phone
+				//- 				.contacts-form-elem
+				//- 					label(for="email") Ваш e-mail
+				//- 					input#email(type="text", data-req='req', data-type='email').contacts-form__input.contacts-form__input.contacts-form__input--email
+				//- 			.contacts-form-row.contacts-form-row--submit
+				//- 				.contacts-form-elem.contacts-form-elem--conf
+				//- 					input#personal_p5(type='checkbox', name='accuracy', data-req='req', data-type='checkbox').contact-form__checkbox
+				//- 					label.contacts-form__checkbox-label(for='personal_p5') Согласен на &nbsp;
+				//- 						a(href='#') обработку персональных данных
+				//- 				button(type="submit").contacts-form__btn.btn Забрать подарки
+		script(src='./js/script.min.js')

@@ -42,7 +42,7 @@ $(document).ready(function() {
       $('.quiz').submit(function(e) {
         if (!_th.checkForm($('.owl-item.active .last-slide'))) {
           return false;
-        } // $.ajax({})
+        }
       });
     },
 
@@ -125,7 +125,6 @@ $(document).ready(function() {
       pullDrag: false,
       onInitialized: counter,
       onTranslated: counter,
-
     })
 
     function counter(event) {
@@ -133,7 +132,7 @@ $(document).ready(function() {
       var items = event.item.count - 2;
       var item = event.item.index;
       var persent = (100 / items) * event.item.index;
-      $('.active').find('#counter').html("вопрос " + item + "/" + items);
+      $('.active').find('#counter').html("<b>вопрос " + item + "</b> / " + items);
       $('.active').find('progress').val(persent);
     }
   });
