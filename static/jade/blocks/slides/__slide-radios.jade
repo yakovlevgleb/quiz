@@ -1,0 +1,42 @@
+mixin slide-radios
+	.quiz__slide
+		.quiz__form
+			.quiz__form-container
+				span.quiz__form-upper-text Узнайте какая стеллажная система лучше всего подойдет именно вам.
+				p.quiz__form-question Для каких помещений вам необходима стеллажная система?
+				span#quiz-counter.quiz__form-counter
+					b вопрос 1
+					| / 0
+				.quiz__form-elements
+					.quiz__form-row
+						.quiz__form-item.quiz__form-item--half
+							.quiz__form-row
+								input(type="radio", id="radio1", data-type="radio", name="slide5" , data-req='req', value="Дома (например, на балконе)", checked)
+								label(for="radio1") Дома (например, на балконе)
+								
+						.quiz__form-item.quiz__form-item--half
+							.quiz__form-row
+								input(type="radio", id="radio2", data-type="radio", name="slide5" , data-req='req', value="Дома (например, на балконе)")
+								label(for="radio2") Дома (например, на балконе)
+								
+				.quiz__form-row
+					.quiz__form-item.quiz__form-item--half
+						.quiz__form-row
+								input(type="radio", id="radio3", data-type="radio", name="slide5" , data-req='req', value="Дома (например, на балконе)")
+								label(for="radio3") Дома (например, на балконе)
+								
+					.quiz__form-item.quiz__form-item--half
+						.quiz__form-row
+								input(type="radio", id="radio4", data-type="radio", name="slide5" , data-req='req', value="Дома (например, на балконе)")
+								label(for="radio4") Дома (например, на балконе)
+
+			.quiz__form-navigation
+				.quiz__form-btns
+					button(type="button").quiz__btn.quiz__btn--prev.js-quiz-prev-btn Назад
+					button(type="button").quiz__btn.quiz__btn--next.js-quiz-next-btn Далее
+
+		.quiz__comment
+			.quiz__comment-author
+				.quiz__comment-right
+					span.quiz__comment-title Совет 
+			blockquote.quiz__comment-text Геодезическая линия, в первом приближении, актаульна как никогда. Селекция бренда достижимо в разумные сроки. Как отмечает Майкл Мескон, ряд Тейлора позитивно программирует продвигаемый максимум. Уравнение в частных производных, безусловно, недостаточно порождает разрыв функции.

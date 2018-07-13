@@ -25,7 +25,7 @@ $(document).ready(function() {
         showMaskOnFocus: false
       });
 
-      $('.last-slide form').submit(function(e) {
+      $('.quiz').submit(function(e) {
         if (!_th.checkForm($(this))) {
           return false;
         }
@@ -67,13 +67,7 @@ $(document).ready(function() {
               }
               break;
             case 'checkbox':
-              if (!$(this).is(':checked')) {
-                $(this).parent().addClass('warning');
-                checkResult = false;
-              }
-              break;
-            case 'radio':
-              if (!$('.active').find('.jq-radio').hasClass('checked')) {
+              if (!$('.active').find('.jq-checkbox').hasClass('checked')) {
                 $(this).parent().addClass('warning');
                 checkResult = false;
               }

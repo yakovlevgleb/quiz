@@ -1,0 +1,23 @@
+mixin last-slide
+	.quiz__last-slide
+		.quiz__last-slide-header
+			i.quiz__last-slide-icon
+			h2.quiz__last-slide-title Отлично. Последний шаг!
+			.quiz__last-slide-comment 
+				//- !!!либо текст либо фотка
+				img(src="./img/done-img.jpg", alt="")
+			//- 	p Начиная с 2000 года одним из основных направлений деятельности компании «Горторгснаб» является производство и продажа стеллажей. В 2001 году начато производство легких стеллажей, чуть позже – полочных складских стеллажей малой и средней грузоподъемности, а также металлических шкафов.
+		.quiz__contact-form
+			.quiz__contacts-form-row
+				.quiz__contacts-form-elem
+					input(type="text", data-req='req', data-type='text', placeholder="Ваше имя").quiz__contacts-form-input
+				.quiz__contacts-form-elem
+					input(type="text", data-req='req', data-type='mobile', placeholder="Ваше номер телефона").js-phone.quiz__contacts-form-input
+				.quiz__contacts-form-elem
+					input(type="text", data-req='req', data-type='email', placeholder="E-mail").quiz__contacts-form-input
+			.quiz__contacts-form-column
+				.quiz__contacts-form-accuracy
+					input#quiz-accuracy(type='checkbox', name='accuracy', data-req='req', data-type='checkbox', placeholder="Ваше имя").quiz__contact-form-checkbox
+					label.quiz__contacts-form-checkbox-label(for='accuracy') Я даю согласие на &nbsp;
+						a(href='#') обработку персональных данных
+				button(type="submit").quiz__contacts-form-btn.quiz__btn Получить результат 

@@ -184,9 +184,6 @@ body {
 		}
 
 		&.checked {
-			-webkit-box-shadow: 0 0 7.36px 0.64px rgba(0, 0, 0, 0.15);
-			        box-shadow: 0 0 7.36px 0.64px rgba(0, 0, 0, 0.15);
-
 			&:before {
 				position: absolute;
 				top: 50%;
@@ -216,6 +213,7 @@ body {
 		background-color: #ffffff;
 		border: 1px solid #ececec;
 		padding: 48px;
+		padding-top: 42px;
 
 		justify-content: space-between;
 	}
@@ -229,6 +227,7 @@ body {
 	&__form {
 		display: flex;
 		flex-direction: column;
+		margin-right: 42px;
 
 		width: 860px;
 	}
@@ -238,11 +237,17 @@ body {
 		flex-direction: column;
 	}
 
+	&__form-elements {
+		display: flex;
+		flex-direction: row;
+	}
+
 	&__form-upper-text {
 		font-size: 14px;
 		font-weight: 600;
 		line-height: 24px;
 		color: #0e0e0e;
+		margin-bottom: 10px;
 	}
 
 	&__form-question {
@@ -253,9 +258,12 @@ body {
 
 	&__form-counter {
 		font-size: 14px;
-		line-height: 48px;
+		line-height: 50px;
 		font-weight: 700;
 		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin-bottom: 9px;
+
 		b {
 			color: #e76f17;
 		}
@@ -308,9 +316,11 @@ body {
 
 	&__comment {
 		width: 330px;
+		min-height: 517px;
 		padding: 40px ;
 		padding-bottom: 85px;
 		background-color: #f5f5f5;
+		flex-shrink: 0;
 	}
 
 	&__comment-img {
@@ -318,8 +328,8 @@ body {
 		align-self: flex-start;
 
 		border-radius: 50%;
-		max-width: 103px;
-		max-height: 103px;
+		max-width: 82px;
+		max-height: 82px;
 	}
 
 	&__comment-title {
@@ -335,7 +345,7 @@ body {
 	&__comment-author {
 		display: flex;
 		flex-direction: row;
-		margin-bottom: 35px;
+		margin-bottom: 12px;
 	}
 
 	&__comment-name {
@@ -422,7 +432,7 @@ body {
 		flex-direction: column;
 	}
 
-	&__last-slide-header {
+	&__last-slide-icon {
 		display: block;
 		width: 58px;
 		height: 58px;
@@ -480,18 +490,22 @@ body {
 		&:last-child {
 			margin-right: 0;
 		}
+	}
 
-		input {
-			border: 2px solid #ececec;
-			width: 395px;
-			height: 48px;
-			font-size: 14px;
-			line-height: 48px;
-			color: #0e0e0e;
-			padding-left: 17px;
-			font-family: 'Open Sans';
-			font-weight: 400;
-			outline-color: transparent;
+	&__contacts-form-input {
+		border: 2px solid #ececec;
+    width: 395px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 48px;
+    color: #0e0e0e;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    outline-color: transparent;
+		&.warning {
+			border-color: red;
 		}
 	}
 

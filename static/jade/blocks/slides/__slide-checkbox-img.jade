@@ -1,0 +1,54 @@
+mixin slide-checkbox-img
+	.quiz__slide
+		.quiz__form
+			.quiz__form-container
+				span.quiz__form-upper-text Узнайте какая стеллажная система лучше всего подойдет именно вам.
+				p.quiz__form-question Для каких помещений вам необходима стеллажная система?
+				span#quiz-counter.quiz__form-counter
+					b вопрос 1
+					| / 0
+				.quiz__form-elements
+					.quiz__form-row
+						.quiz__form-item
+							label(for="checkbox1").quiz__form-img
+								img(src="./img/img-1.jpg", alt="Дома (например, на балконе)")
+							.quiz__form-row
+								input(type="checkbox", id="checkbox1", data-type="checkbox", name="slide1" , data-req='req', value="Дома (например, на балконе)")
+								label(for="checkbox1") Дома (например, на балконе)
+								
+						.quiz__form-item
+							label(for="checkbox2").quiz__form-img
+								img(src="./img/img-2.jpg", alt="Дома (например, на балконе)")
+							.quiz__form-row
+								input(type="checkbox", id="checkbox2", data-type="checkbox", name="slide1" , data-req='req', value="Дома (например, на балконе)")
+								label(for="checkbox2") Дома (например, на балконе)
+								
+					.quiz__form-row
+						.quiz__form-item
+							label(for="checkbox3").quiz__form-img
+								img(src="./img/img-3.jpg", alt="Дома (например, на балконе)")
+							.quiz__form-row
+								input(type="checkbox", id="checkbox3", data-type="checkbox", name="slide1" , data-req='req', value="Дома (например, на балконе)")
+								label(for="checkbox3") Дома (например, на балконе)
+								
+						.quiz__form-item
+							label(for="checkbox4").quiz__form-img
+								img(src="./img/img-4.jpg", alt="Дома (например, на балконе)")
+							.quiz__form-row
+								input(type="checkbox", id="checkbox4", data-type="checkbox", name="slide1" , data-req='req', value="Дома (например, на балконе)")
+								label(for="checkbox4") Дома (например, на балконе)
+
+			.quiz__form-navigation
+				.quiz__form-btns
+					button(type="button").quiz__btn.quiz__btn--prev.js-quiz-prev-btn Назад
+					button(type="button").quiz__btn.quiz__btn--next.js-quiz-next-btn Далее
+						
+		.quiz__comment
+			.quiz__comment-author
+				img(src="img/face.jpg", alt="").quiz__comment-img
+				.quiz__comment-right
+					span.quiz__comment-name Светлана
+						br
+						| Рылеева
+					span.quiz__comment-post Консультант
+			blockquote.quiz__comment-text Геодезическая линия, в первом приближении, актаульна как никогда. Селекция бренда достижимо в разумные сроки. Как отмечает Майкл Мескон, ряд Тейлора позитивно программирует продвигаемый максимум. Уравнение в частных производных, безусловно, недостаточно порождает разрыв функции.

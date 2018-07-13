@@ -6,146 +6,9 @@ html(lang="ru")
 	body
 		.wrapper
 			form.quiz.owl-carousel
-				.quiz__main-slide(style="background-image: url('../img/main-bg.jpg');")
-					.quiz__main-slide-content
-						.quiz__main-slide-header
-							h1.quiz__main-slide-title Заголовок Квиза. Чтобы узнать вашу выгоду пройдите небольшой тест
-							p.quiz__main-slide-desc Описание в несколько строчек, чтобы показать межстрочное расстояние подзаголовка
-						button(type="button").quiz__main-slide-btn.quiz__btn.js-main-slide-btn Пройти тест
-
-				.quiz__slide
-					.quiz__form
-						.quiz__form-container
-							span.quiz__form-upper-text Узнайте какая стеллажная система лучше всего подойдет именно вам.
-							p.quiz__form-question Для каких помещений вам необходима стеллажная система?
-							span#quiz-counter.quiz__form-counter
-								b вопрос 1
-								| / 0
-							.quiz__form-elements
-								.quiz__form-row
-									.quiz__form-item
-										label(for="checkbox1").quiz__form-img
-											img(src="./img/img-1.jpg", alt="Дома (например, на балконе)")
-										.quiz__form-row
-											input(type="checkbox", id="checkbox1", data-type="checkbox", name="slide1" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox1") Дома (например, на балконе)
-											
-									.quiz__form-item
-										label(for="checkbox2").quiz__form-img
-											img(src="./img/img-2.jpg", alt="Дома (например, на балконе)")
-										.quiz__form-row
-											input(type="checkbox", id="checkbox2", data-type="checkbox", name="slide1" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox2") Дома (например, на балконе)
-											
-									.quiz__form-item
-										label(for="checkbox3").quiz__form-img
-											img(src="./img/img-3.jpg", alt="Дома (например, на балконе)")
-										.quiz__form-row
-											input(type="checkbox", id="checkbox3", data-type="checkbox", name="slide1" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox3") Дома (например, на балконе)
-											
-									.quiz__form-item
-										label(for="checkbox4").quiz__form-img
-											img(src="./img/img-4.jpg", alt="Дома (например, на балконе)")
-										.quiz__form-row
-											input(type="checkbox", id="checkbox4", data-type="checkbox", name="slide1" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox4") Дома (например, на балконе)
-
-						.quiz__form-navigation
-							.quiz__form-btns
-								button(type="button").quiz__btn.quiz__btn--prev.js-quiz-prev-btn Назад
-								button(type="button").quiz__btn.quiz__btn--next.js-quiz-next-btn Далее
-									
-					.quiz__comment
-						.quiz__comment-author
-							img(src="img/face.jpg", alt="").quiz__comment-img
-							.quiz__comment-right
-								span.quiz__comment-name Светлана
-									br
-									| Рылеева
-								span.quiz__comment-post Консультант
-						blockquote.quiz__comment-text Геодезическая линия, в первом приближении, актаульна как никогда. Селекция бренда достижимо в разумные сроки. Как отмечает Майкл Мескон, ряд Тейлора позитивно программирует продвигаемый максимум. Уравнение в частных производных, безусловно, недостаточно порождает разрыв функции.
-
-				.quiz__slide
-					.quiz__form
-						.quiz__form-container
-							span.quiz__form-upper-text Узнайте какая стеллажная система лучше всего подойдет именно вам.
-							p.quiz__form-question Для каких помещений вам необходима стеллажная система?
-							span#quiz-counter.quiz__form-counter
-								b вопрос 1
-								| / 0
-							.quiz__form-elements
-								.quiz__form-row
-									.quiz__form-item.quiz__form-item--half
-										.quiz__form-row
-											input(type="checkbox", id="checkbox5", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox5") Дома (например, на балконе)
-											
-									.quiz__form-item.quiz__form-item--half
-										.quiz__form-row
-											input(type="checkbox", id="checkbox13", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox13") Дома (например, на балконе)
-											
-								.quiz__form-row
-									.quiz__form-item.quiz__form-item--half
-										.quiz__form-row
-											input(type="checkbox", id="checkbox6", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox6") Дома (например, на балконе)
-											
-									.quiz__form-item.quiz__form-item--half
-										.quiz__form-row
-											input(type="checkbox", id="checkbox7", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox7") Дома (например, на балконе)
-											
-								.quiz__form-row
-									.quiz__form-item.quiz__form-item--half
-										.quiz__form-row
-											input(type="checkbox", id="checkbox12", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox12") Дома (например, на балконе)
-											
-									.quiz__form-item.quiz__form-item--half
-										.quiz__form-row
-											input(type="checkbox", id="checkbox8", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox8") Дома (например, на балконе)
-											
-								.quiz__form-row
-									.quiz__form-item.quiz__form-item--half
-										.quiz__form-row
-											input(type="checkbox", id="checkbox30", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox30") Дома (например, на балконе)
-											
-
-									.quiz__form-item.quiz__form-item--half
-										.quiz__form-row
-											input(type="checkbox", id="checkbox9", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox9") Дома (например, на балконе)
-								
-								.quiz__form-row
-									.quiz__form-item.quiz__form-item--half
-										.quiz__form-row
-											input(type="checkbox", id="checkbox10", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox10") Дома (например, на балконе)
-											
-									.quiz__form-item.quiz__form-item--half
-										.quiz__form-row
-											input(type="checkbox", id="checkbox11", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox11") Дома (например, на балконе)
-
-						.quiz__form-navigation
-							.quiz__form-btns
-								button(type="button").quiz__btn.quiz__btn--prev.js-quiz-prev-btn Назад
-								button(type="button").quiz__btn.quiz__btn--next.js-quiz-next-btn Далее
-								
-					.quiz__comment
-						.quiz__comment-author
-							img(src="img/face.jpg", alt="").quiz__comment-img
-							.quiz__comment-right
-								span.quiz__comment-name Светлана
-									br
-									| Рылеева
-								span.quiz__comment-post Консультант
-						blockquote.quiz__comment-text Геодезическая линия, в первом приближении, актаульна как никогда. Селекция бренда достижимо в разумные сроки. Как отмечает Майкл Мескон, ряд Тейлора позитивно программирует продвигаемый максимум. Уравнение в частных производных, безусловно, недостаточно порождает разрыв функции.
-
+				+main-slide
+				+slide-checkbox-img
+				+slide-checkbox
 				.quiz__slide
 					.quiz__form
 						.quiz__form-container
@@ -158,57 +21,57 @@ html(lang="ru")
 								.quiz__form-row
 									.quiz__form-item.quiz__form-item--half
 										.quiz__form-row
-											input(type="checkbox", id="checkbox5", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox5") Дома (например, на балконе)
+											input(type="checkbox", id="checkbox50", data-type="checkbox", name="slide20" , data-req='req', value="Дома (например, на балконе)")
+											label(for="checkbox50") Дома (например, на балконе)
 											
 									.quiz__form-item.quiz__form-item--half
 										.quiz__form-row
-											input(type="checkbox", id="checkbox13", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox13") Дома (например, на балконе)
+											input(type="checkbox", id="checkbox130", data-type="checkbox", name="slide20" , data-req='req', value="Дома (например, на балконе)")
+											label(for="checkbox130") Дома (например, на балконе)
 											
 								.quiz__form-row
 									.quiz__form-item.quiz__form-item--half
 										.quiz__form-row
-											input(type="checkbox", id="checkbox6", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox6") Дома (например, на балконе)
+											input(type="checkbox", id="checkbox60", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
+											label(for="checkbox60") Дома (например, на балконе)
 											
 									.quiz__form-item.quiz__form-item--half
 										.quiz__form-row
-											input(type="checkbox", id="checkbox7", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox7") Дома (например, на балконе)
+											input(type="checkbox", id="checkbox70", data-type="checkbox", name="slide20" , data-req='req', value="Дома (например, на балконе)")
+											label(for="checkbox70") Дома (например, на балконе)
 											
 								.quiz__form-row
 									.quiz__form-item.quiz__form-item--half
 										.quiz__form-row
-											input(type="checkbox", id="checkbox12", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox12") Дома (например, на балконе)
+											input(type="checkbox", id="checkbox120", data-type="checkbox", name="slide20" , data-req='req', value="Дома (например, на балконе)")
+											label(for="checkbox120") Дома (например, на балконе)
 											
 									.quiz__form-item.quiz__form-item--half
 										.quiz__form-row
-											input(type="checkbox", id="checkbox8", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox8") Дома (например, на балконе)
+											input(type="checkbox", id="checkbox80", data-type="checkbox", name="slide20" , data-req='req', value="Дома (например, на балконе)")
+											label(for="checkbox80") Дома (например, на балконе)
 											
 								.quiz__form-row
 									.quiz__form-item.quiz__form-item--half
 										.quiz__form-row
-											input(type="checkbox", id="checkbox30", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox30") Дома (например, на балконе)
+											input(type="checkbox", id="checkbox300", data-type="checkbox", name="slide20" , data-req='req', value="Дома (например, на балконе)")
+											label(for="checkbox300") Дома (например, на балконе)
 											
-								.quiz__form-item.quiz__form-item--half
-									.quiz__form-row
-											input(type="checkbox", id="checkbox9", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox9") Дома (например, на балконе)
+									.quiz__form-item.quiz__form-item--half
+										.quiz__form-row
+												input(type="checkbox", id="checkbox90", data-type="checkbox", name="slide20" , data-req='req', value="Дома (например, на балконе)")
+												label(for="checkbox90") Дома (например, на балконе)
 											
 								.quiz__form-row
 									.quiz__form-item.quiz__form-item--half
 										.quiz__form-row
-											input(type="checkbox", id="checkbox10", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox10") Дома (например, на балконе)
+											input(type="checkbox", id="checkbox100", data-type="checkbox", name="slide20" , data-req='req', value="Дома (например, на балконе)")
+											label(for="checkbox100") Дома (например, на балконе)
 											
-									.qiz__form-item.quiz__form-item--half
+									.quiz__form-item.quiz__form-item--half
 										.quiz__form-row
-											input(type="checkbox", id="checkbox11", data-type="checkbox", name="slide2" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox11") Дома (например, на балконе)
+											input(type="checkbox", id="checkbox110", data-type="checkbox", name="slide20" , data-req='req', value="Дома (например, на балконе)")
+											label(for="checkbox110") Дома (например, на балконе)
 								
 						.quiz__form-navigation
 							.quiz__form-btns
@@ -220,71 +83,6 @@ html(lang="ru")
 							.quiz__comment-right
 								span.quiz__comment-title Совет 
 						blockquote.quiz__comment-text Геодезическая линия, в первом приближении, актаульна как никогда. Селекция бренда достижимо в разумные сроки. Как отмечает Майкл Мескон, ряд Тейлора позитивно программирует продвигаемый максимум. Уравнение в частных производных, безусловно, недостаточно порождает разрыв функции.
-
-				.quiz__slide
-					.form
-						.form__container
-							span.form__upper-text Узнайте какая стеллажная система лучше всего подойдет именно вам.
-							p.form__question Для каких помещений вам необходима стеллажная система?
-							span#counter.form__counter
-								b вопрос 1
-								| / 0
-							.form__elements
-								.form__row
-									.form__item.form__item--half
-										.form__row
-											input(type="radio", id="radio1", data-type="radio", name="slide5" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox5") Дома (например, на балконе)
-											
-									.form__item.form__item--half
-										.form__row
-											input(type="radio", id="radio2", data-type="radio", name="slide5" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox13") Дома (например, на балконе)
-											
-								.form__row
-									.form__item.form__item--half
-										.form__row
-											input(type="radio", id="radio3", data-type="radio", name="slide5" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox5") Дома (например, на балконе)
-											
-									.form__item.form__item--half
-										.form__row
-											input(type="radio", id="radio4", data-type="radio", name="slide5" , data-req='req', value="Дома (например, на балконе)")
-											label(for="checkbox13") Дома (например, на балконе)
-
-						.quiz__form-navigation
-							.quiz__form-btns
-								button(type="button").quiz__btn.quiz__btn--prev.js-quiz-prev-btn Назад
-								button(type="button").quiz__btn.quiz__btn--next.js-quiz-next-btn Далее
-	
-					.quiz__comment.comment
-						.comment__author
-							.comment__right
-								span.comment__title Совет 
-						blockquote.comment__text Геодезическая линия, в первом приближении, актаульна как никогда. Селекция бренда достижимо в разумные сроки. Как отмечает Майкл Мескон, ряд Тейлора позитивно программирует продвигаемый максимум. Уравнение в частных производных, безусловно, недостаточно порождает разрыв функции.
-
-				.quiz__last-slide
-					.quiz__last-slide-wrapper
-						.quiz__last-slide-header
-							i.quiz__last-slide-icon
-							h2.quiz__last-slide-title Отлично. Последний шаг!
-							.quiz__last-slide-comment 
-								//- !!!либо текст либо фотка
-								img(src="./img/done-img.jpg", alt="")
-							//- 	p Начиная с 2000 года одним из основных направлений деятельности компании «Горторгснаб» является производство и продажа стеллажей. В 2001 году начато производство легких стеллажей, чуть позже – полочных складских стеллажей малой и средней грузоподъемности, а также металлических шкафов.
-						.quiz__contact-form
-							.quiz__contacts-form-row
-								.quiz__contacts-form-elem
-									input(type="text", data-req='req', data-type='text', placeholder="Ваше имя").quiz__contacts-form-input
-								.quiz__contacts-form-elem
-									input(type="text", data-req='req', data-type='mobile', placeholder="Ваше номер телефона").js-phone.quiz__contacts-form-input
-								.contacts-form__elem        
-									input(type="text", data-req='req', data-type='email', placeholder="E-mail").quiz__contacts-form-input
-							.quiz__contacts-form-column
-								.quiz__contacts-form-accuracy
-									input#quiz-accuracy(type='checkbox', name='accuracy', data-req='req', data-type='checkbox', placeholder="Ваше имя").quiz__contact-form-checkbox
-									label.quiz__contacts-form-checkbox-label(for='accuracy') Я даю согласие на &nbsp;
-										a(href='#') обработку персональных данных
-								button(type="submit").quiz__contacts-form-btn.btn Получить результат 
-								
+				+slide-radios
+				+last-slide								
 		script(src='./js/script.min.js')

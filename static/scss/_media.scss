@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1300px) {
+	.wrapper {
+		width: 100vw;
+	}
+	.quiz {
+		width: 100%;
+
+		&__form-row {
+			flex-wrap: wrap;
+		}
+
+		&__form-item {
+			margin-bottom: 22px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.quiz {
+		&__comment {
+			display: none;
+		}
+		&__form-img {
+			img {
+				width: 110px!important;
+				height: 110px;
+			}
+		}
+	}
+}
