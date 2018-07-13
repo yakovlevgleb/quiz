@@ -16,45 +16,45 @@
   <body>
     <div class="wrapper">
       <form class="quiz owl-carousel">
-        <div style="background-image: url('../img/main-bg.jpg');" class="main-slide">
-          <div class="main-slide__content">
-            <div class="main-slide__header">
-              <h1 class="main-slide__title">Заголовок Квиза. Чтобы узнать вашу выгоду пройдите небольшой тест</h1>
-              <p> Описание в несколько строчек, чтобы показать межстрочное расстояние подзаголовка</p>
+        <div style="background-image: url('../img/main-bg.jpg');" class="quiz__main-slide">
+          <div class="quiz__main-slide-content">
+            <div class="quiz__main-slide-header">
+              <h1 class="quiz__main-slide-title">Заголовок Квиза. Чтобы узнать вашу выгоду пройдите небольшой тест</h1>
+              <p class="quiz__main-slide-desc">Описание в несколько строчек, чтобы показать межстрочное расстояние подзаголовка</p>
             </div>
-            <button type="button" class="main-slide__btn btn">Пройти тест</button>
+            <button type="button" class="quiz__main-slide-btn quiz__btn js-main-slide-btn">Пройти тест</button>
           </div>
         </div>
         <div class="quiz__slide">
-          <div class="form">
-            <div class="form__container"><span class="form__upper-text">Узнайте какая стеллажная система лучше всего подойдет именно вам.</span>
-              <p class="form__question">Для каких помещений вам необходима стеллажная система?</p><span id="counter" class="form__counter"><b>вопрос 1</b>/ 0</span>
-              <div class="form__checkbox">
-                <div class="form__row">
-                  <div class="form__checkbox-item">
-                    <label for="checkbox1" class="form__img"><img src="./img/img-1.jpg" alt="Дома (например, на балконе)"></label>
-                    <div class="form__row">
+          <div class="quiz__form">
+            <div class="quiz__form-container"><span class="quiz__form-upper-text">Узнайте какая стеллажная система лучше всего подойдет именно вам.</span>
+              <p class="quiz__form-question">Для каких помещений вам необходима стеллажная система?</p><span id="quiz-counter" class="quiz__form-counter"><b>вопрос 1</b>/ 0</span>
+              <div class="quiz__form-elements">
+                <div class="quiz__form-row">
+                  <div class="quiz__form-item">
+                    <label for="checkbox1" class="quiz__form-img"><img src="./img/img-1.jpg" alt="Дома (например, на балконе)"></label>
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox1" data-type="checkbox" name="slide1" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox1">Дома (например, на балконе)</label>
                     </div>
                   </div>
-                  <div class="form__checkbox-item">
-                    <label for="checkbox2" class="form__img"><img src="./img/img-2.jpg" alt="Дома (например, на балконе)"></label>
-                    <div class="form__row">
+                  <div class="quiz__form-item">
+                    <label for="checkbox2" class="quiz__form-img"><img src="./img/img-2.jpg" alt="Дома (например, на балконе)"></label>
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox2" data-type="checkbox" name="slide1" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox2">Дома (например, на балконе)</label>
                     </div>
                   </div>
-                  <div class="form__checkbox-item">
-                    <label for="checkbox3" class="form__img"><img src="./img/img-3.jpg" alt="Дома (например, на балконе)"></label>
-                    <div class="form__row">
+                  <div class="quiz__form-item">
+                    <label for="checkbox3" class="quiz__form-img"><img src="./img/img-3.jpg" alt="Дома (например, на балконе)"></label>
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox3" data-type="checkbox" name="slide1" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox3">Дома (например, на балконе)</label>
                     </div>
                   </div>
-                  <div class="form__checkbox-item">
-                    <label for="checkbox4" class="form__img"><img src="./img/img-4.jpg" alt="Дома (например, на балконе)"></label>
-                    <div class="form__row">
+                  <div class="quiz__form-item">
+                    <label for="checkbox4" class="quiz__form-img"><img src="./img/img-4.jpg" alt="Дома (например, на балконе)"></label>
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox4" data-type="checkbox" name="slide1" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox4">Дома (например, на балконе)</label>
                     </div>
@@ -62,90 +62,90 @@
                 </div>
               </div>
             </div>
-            <div class="form__navigation">
-              <div class="form__btns">
-                <button type="button" class="quiz-btn quiz-btn--prev">Назад</button>
-                <button type="button" class="quiz-btn quiz-btn--next btn">Далее</button>
+            <div class="quiz__form-navigation">
+              <div class="quiz__form-btns">
+                <button type="button" class="quiz__btn quiz__btn--prev js-quiz-prev-btn">Назад</button>
+                <button type="button" class="quiz__btn quiz__btn--next js-quiz-next-btn">Далее</button>
               </div>
             </div>
           </div>
-          <div class="quiz__comment comment">
-            <div class="comment__author"><img src="img/face.jpg" alt="">
-              <div class="comment__right"><span class="comment__name">Светлана<br>Рылеева</span><span class="comment__post">Консультант</span></div>
+          <div class="quiz__comment">
+            <div class="quiz__comment-author"><img src="img/face.jpg" alt="" class="quiz__comment-img">
+              <div class="quiz__comment-right"><span class="quiz__comment-name">Светлана<br>Рылеева</span><span class="quiz__comment-post">Консультант</span></div>
             </div>
-            <blockquote class="comment__text">Геодезическая линия, в первом приближении, актаульна как никогда. Селекция бренда достижимо в разумные сроки. Как отмечает Майкл Мескон, ряд Тейлора позитивно программирует продвигаемый максимум. Уравнение в частных производных, безусловно, недостаточно порождает разрыв функции.</blockquote>
+            <blockquote class="quiz__comment-text">Геодезическая линия, в первом приближении, актаульна как никогда. Селекция бренда достижимо в разумные сроки. Как отмечает Майкл Мескон, ряд Тейлора позитивно программирует продвигаемый максимум. Уравнение в частных производных, безусловно, недостаточно порождает разрыв функции.</blockquote>
           </div>
         </div>
         <div class="quiz__slide">
-          <div class="form">
-            <div class="form__container"><span class="form__upper-text">Узнайте какая стеллажная система лучше всего подойдет именно вам.</span>
-              <p class="form__question">Для каких помещений вам необходима стеллажная система?</p><span id="counter" class="form__counter"><b>вопрос 1</b>/ 0</span>
-              <div class="form__checkbox">
-                <div class="form__row">
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+          <div class="quiz__form">
+            <div class="quiz__form-container"><span class="quiz__form-upper-text">Узнайте какая стеллажная система лучше всего подойдет именно вам.</span>
+              <p class="quiz__form-question">Для каких помещений вам необходима стеллажная система?</p><span id="quiz-counter" class="quiz__form-counter"><b>вопрос 1</b>/ 0</span>
+              <div class="quiz__form-elements">
+                <div class="quiz__form-row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox5" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox5">Дома (например, на балконе)</label>
                     </div>
                   </div>
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox13" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox13">Дома (например, на балконе)</label>
                     </div>
                   </div>
                 </div>
-                <div class="form__row">
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                <div class="quiz__form-row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox6" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox6">Дома (например, на балконе)</label>
                     </div>
                   </div>
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox7" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox7">Дома (например, на балконе)</label>
                     </div>
                   </div>
                 </div>
-                <div class="form__row">
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                <div class="quiz__form-row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox12" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox12">Дома (например, на балконе)</label>
                     </div>
                   </div>
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox8" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox8">Дома (например, на балконе)</label>
                     </div>
                   </div>
                 </div>
-                <div class="form__row">
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                <div class="quiz__form-row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox30" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox30">Дома (например, на балконе)</label>
                     </div>
                   </div>
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox9" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox9">Дома (например, на балконе)</label>
                     </div>
                   </div>
                 </div>
-                <div class="form__row">
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                <div class="quiz__form-row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox10" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox10">Дома (например, на балконе)</label>
                     </div>
                   </div>
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox11" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox11">Дома (например, на балконе)</label>
                     </div>
@@ -153,90 +153,90 @@
                 </div>
               </div>
             </div>
-            <div class="form__navigation">
-              <div class="form__btns">
-                <button type="button" class="quiz-btn quiz-btn--prev">Назад</button>
-                <button type="button" class="quiz-btn quiz-btn--next btn">Далее</button>
+            <div class="quiz__form-navigation">
+              <div class="quiz__form-btns">
+                <button type="button" class="quiz__btn quiz__btn--prev js-quiz-prev-btn">Назад</button>
+                <button type="button" class="quiz__btn quiz__btn--next js-quiz-next-btn">Далее</button>
               </div>
             </div>
           </div>
-          <div class="quiz__comment comment">
-            <div class="comment__author"><img src="img/face.jpg" alt="">
-              <div class="comment__right"><span class="comment__name">Светлана<br>Рылеева</span><span class="comment__post">Консультант</span></div>
+          <div class="quiz__comment">
+            <div class="quiz__comment-author"><img src="img/face.jpg" alt="" class="quiz__comment-img">
+              <div class="quiz__comment-right"><span class="quiz__comment-name">Светлана<br>Рылеева</span><span class="quiz__comment-post">Консультант</span></div>
             </div>
-            <blockquote class="comment__text">Геодезическая линия, в первом приближении, актаульна как никогда. Селекция бренда достижимо в разумные сроки. Как отмечает Майкл Мескон, ряд Тейлора позитивно программирует продвигаемый максимум. Уравнение в частных производных, безусловно, недостаточно порождает разрыв функции.</blockquote>
+            <blockquote class="quiz__comment-text">Геодезическая линия, в первом приближении, актаульна как никогда. Селекция бренда достижимо в разумные сроки. Как отмечает Майкл Мескон, ряд Тейлора позитивно программирует продвигаемый максимум. Уравнение в частных производных, безусловно, недостаточно порождает разрыв функции.</blockquote>
           </div>
         </div>
         <div class="quiz__slide">
-          <div class="form">
-            <div class="form__container"><span class="form__upper-text">Узнайте какая стеллажная система лучше всего подойдет именно вам.</span>
-              <p class="form__question">Для каких помещений вам необходима стеллажная система?</p><span id="counter" class="form__counter"><b>вопрос 1</b>/ 0</span>
-              <div class="form__checkbox">
-                <div class="form__row">
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+          <div class="quiz__form">
+            <div class="quiz__form-container"><span class="quiz__form-upper-text">Узнайте какая стеллажная система лучше всего подойдет именно вам.</span>
+              <p class="quiz__form-question">Для каких помещений вам необходима стеллажная система?</p><span id="quiz-counter" class="quiz__form-counter"><b>вопрос 1</b>/ 0</span>
+              <div class="qioz__form">
+                <div class="quiz__form-row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox5" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox5">Дома (например, на балконе)</label>
                     </div>
                   </div>
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox13" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox13">Дома (например, на балконе)</label>
                     </div>
                   </div>
                 </div>
-                <div class="form__row">
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                <div class="quiz__form-row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox6" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox6">Дома (например, на балконе)</label>
                     </div>
                   </div>
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox7" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox7">Дома (например, на балконе)</label>
                     </div>
                   </div>
                 </div>
-                <div class="form__row">
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                <div class="quiz__form-row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox12" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox12">Дома (например, на балконе)</label>
                     </div>
                   </div>
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox8" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox8">Дома (например, на балконе)</label>
                     </div>
                   </div>
                 </div>
-                <div class="form__row">
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                <div class="quiz__form-row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox30" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox30">Дома (например, на балконе)</label>
                     </div>
                   </div>
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
-                      <input type="checkbox" id="checkbox9" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
-                      <label for="checkbox9">Дома (например, на балконе)</label>
-                    </div>
+                </div>
+                <div class="quiz__form-item quiz__form-item--half">
+                  <div class="quiz__form-row">
+                    <input type="checkbox" id="checkbox9" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
+                    <label for="checkbox9">Дома (например, на балконе)</label>
                   </div>
                 </div>
-                <div class="form__row">
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                <div class="quiz__form-row">
+                  <div class="quiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox10" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox10">Дома (например, на балконе)</label>
                     </div>
                   </div>
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
+                  <div class="qiz__form-item quiz__form-item--half">
+                    <div class="quiz__form-row">
                       <input type="checkbox" id="checkbox11" data-type="checkbox" name="slide2" data-req="req" value="Дома (например, на балконе)">
                       <label for="checkbox11">Дома (например, на балконе)</label>
                     </div>
@@ -244,10 +244,59 @@
                 </div>
               </div>
             </div>
-            <div class="form__navigation">
-              <div class="form__btns">
-                <button type="button" class="quiz-btn quiz-btn--prev">Назад</button>
-                <button type="button" class="quiz-btn quiz-btn--next btn">Далее</button>
+            <div class="quiz__form-navigation">
+              <div class="quiz__form-btns">
+                <button type="button" class="quiz__btn quiz__btn--prev js-quiz-prev-btn">Назад</button>
+                <button type="button" class="quiz__btn quiz__btn--next js-quiz-next-btn">Далее</button>
+              </div>
+            </div>
+          </div>
+          <div class="quiz__comment">
+            <div class="quiz__comment-author">
+              <div class="quiz__comment-right"><span class="quiz__comment-title">Совет </span></div>
+            </div>
+            <blockquote class="quiz__comment-text">Геодезическая линия, в первом приближении, актаульна как никогда. Селекция бренда достижимо в разумные сроки. Как отмечает Майкл Мескон, ряд Тейлора позитивно программирует продвигаемый максимум. Уравнение в частных производных, безусловно, недостаточно порождает разрыв функции.</blockquote>
+          </div>
+        </div>
+        <div class="quiz__slide">
+          <div class="form">
+            <div class="form__container"><span class="form__upper-text">Узнайте какая стеллажная система лучше всего подойдет именно вам.</span>
+              <p class="form__question">Для каких помещений вам необходима стеллажная система?</p><span id="counter" class="form__counter"><b>вопрос 1</b>/ 0</span>
+              <div class="form__elements">
+                <div class="form__row">
+                  <div class="form__item form__item--half">
+                    <div class="form__row">
+                      <input type="radio" id="radio1" data-type="radio" name="slide5" data-req="req" value="Дома (например, на балконе)">
+                      <label for="checkbox5">Дома (например, на балконе)</label>
+                    </div>
+                  </div>
+                  <div class="form__item form__item--half">
+                    <div class="form__row">
+                      <input type="radio" id="radio2" data-type="radio" name="slide5" data-req="req" value="Дома (например, на балконе)">
+                      <label for="checkbox13">Дома (например, на балконе)</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__item form__item--half">
+                    <div class="form__row">
+                      <input type="radio" id="radio3" data-type="radio" name="slide5" data-req="req" value="Дома (например, на балконе)">
+                      <label for="checkbox5">Дома (например, на балконе)</label>
+                    </div>
+                  </div>
+                  <div class="form__item form__item--half">
+                    <div class="form__row">
+                      <input type="radio" id="radio4" data-type="radio" name="slide5" data-req="req" value="Дома (например, на балконе)">
+                      <label for="checkbox13">Дома (например, на балконе)</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="quiz__form-navigation">
+              <div class="quiz__form-btns">
+                <button type="button" class="quiz__btn quiz__btn--prev js-quiz-prev-btn">Назад</button>
+                <button type="button" class="quiz__btn quiz__btn--next js-quiz-next-btn">Далее</button>
               </div>
             </div>
           </div>
@@ -258,80 +307,31 @@
             <blockquote class="comment__text">Геодезическая линия, в первом приближении, актаульна как никогда. Селекция бренда достижимо в разумные сроки. Как отмечает Майкл Мескон, ряд Тейлора позитивно программирует продвигаемый максимум. Уравнение в частных производных, безусловно, недостаточно порождает разрыв функции.</blockquote>
           </div>
         </div>
-        <div class="quiz__slide">
-          <div class="form">
-            <div class="form__container"><span class="form__upper-text">Узнайте какая стеллажная система лучше всего подойдет именно вам.</span>
-              <p class="form__question">Для каких помещений вам необходима стеллажная система?</p><span id="counter" class="form__counter"><b>вопрос 1</b>/ 0</span>
-              <div class="form__checkbox">
-                <div class="form__row">
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
-                      <input type="radio" id="radio1" data-type="radio" name="slide4" data-req="req" value="Дома (например, на балконе)">
-                      <label for="checkbox5">Дома (например, на балконе)</label>
-                    </div>
-                  </div>
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
-                      <input type="radio" id="radio1" data-type="checkbox" name="slide4" data-req="req" value="Дома (например, на балконе)">
-                      <label for="checkbox13">Дома (например, на балконе)</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form__row">
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
-                      <input type="radio" id="radio1" data-type="radio" name="slide4" data-req="req" value="Дома (например, на балконе)">
-                      <label for="checkbox5">Дома (например, на балконе)</label>
-                    </div>
-                  </div>
-                  <div class="form__checkbox-item form__checkbox-item--half">
-                    <div class="form__row">
-                      <input type="radio" id="radio1" data-type="checkbox" name="slide4" data-req="req" value="Дома (например, на балконе)">
-                      <label for="checkbox13">Дома (например, на балконе)</label>
-                    </div>
-                  </div>
-                </div>
+        <div class="quiz__last-slide">
+          <div class="quiz__last-slide-wrapper">
+            <div class="quiz__last-slide-header"><i class="quiz__last-slide-icon"></i>
+              <h2 class="quiz__last-slide-title">Отлично. Последний шаг!</h2>
+              <div class="quiz__last-slide-comment"> <img src="./img/done-img.jpg" alt="">
               </div>
             </div>
-            <div class="form__navigation">
-              <div class="form__btns">
-                <button type="button" class="quiz-btn quiz-btn--prev">Назад</button>
-                <button type="button" class="quiz-btn quiz-btn--next btn">Далее</button>
-              </div>
-            </div>
-          </div>
-          <div class="quiz__comment comment">
-            <div class="comment__author">
-              <div class="comment__right"><span class="comment__title">Совет </span></div>
-            </div>
-            <blockquote class="comment__text">Геодезическая линия, в первом приближении, актаульна как никогда. Селекция бренда достижимо в разумные сроки. Как отмечает Майкл Мескон, ряд Тейлора позитивно программирует продвигаемый максимум. Уравнение в частных производных, безусловно, недостаточно порождает разрыв функции.</blockquote>
-          </div>
-        </div>
-        <div class="last-slide">
-          <div class="last-slide__wrapper">
-            <div class="last-slide__header"><i class="last-slide__icon"></i>
-              <h2 class="last-slide__title">Отлично. Последний шаг!</h2>
-              <div class="last-slide__comment"> <img src="./img/done-img.jpg" alt="">
-              </div>
-            </div>
-            <div class="last-slide__contact-form contacts-form">
-              <div class="contacts-form__row">
-                <div class="contacts-form__elem">
-                  <input type="text" data-req="req" data-type="text" placeholder="Ваше имя" class="contacts-form__input contacts-form__input">
+            <div class="quiz__contact-form">
+              <div class="quiz__contacts-form-row">
+                <div class="quiz__contacts-form-elem">
+                  <input type="text" data-req="req" data-type="text" placeholder="Ваше имя" class="quiz__contacts-form-input">
                 </div>
-                <div class="contacts-form__elem">
-                  <input type="text" data-req="req" data-type="mobile" placeholder="Ваше номер телефона" class="js-phone contacts-form__input contacts-form__input">
+                <div class="quiz__contacts-form-elem">
+                  <input type="text" data-req="req" data-type="mobile" placeholder="Ваше номер телефона" class="js-phone quiz__contacts-form-input">
                 </div>
                 <div class="contacts-form__elem">       
-                  <input type="text" data-req="req" data-type="email" placeholder="E-mail" class="contacts-form__input contacts-form__input">
+                  <input type="text" data-req="req" data-type="email" placeholder="E-mail" class="quiz__contacts-form-input">
                 </div>
               </div>
-              <div class="contacts-form__column">
-                <div class="contacts-form__accuracy">
-                  <input id="accuracy" type="checkbox" name="accuracy" data-req="req" data-type="checkbox" placeholder="Ваше имя" class="contact-form__checkbox">
-                  <label for="accuracy" class="contacts-form__checkbox-label">Я даю согласие на &nbsp;<a href="#">обработку персональных данных</a></label>
+              <div class="quiz__contacts-form-column">
+                <div class="quiz__contacts-form-accuracy">
+                  <input id="quiz-accuracy" type="checkbox" name="accuracy" data-req="req" data-type="checkbox" placeholder="Ваше имя" class="quiz__contact-form-checkbox">
+                  <label for="accuracy" class="quiz__contacts-form-checkbox-label">Я даю согласие на &nbsp;<a href="#">обработку персональных данных</a></label>
                 </div>
-                <button type="submit" class="contacts-form__btn btn">Получить результат </button>
+                <button type="submit" class="quiz__contacts-form-btn btn">Получить результат </button>
               </div>
             </div>
           </div>

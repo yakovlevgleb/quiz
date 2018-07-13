@@ -31,8 +31,8 @@ $(document).ready(function() {
         }
       });
 
-      $('.quiz-btn--next').click(function() {
-        if (!_th.checkForm($('.owl-item.active .quiz-form'))) {
+      $('.js-quiz-next-btn').click(function() {
+        if (!_th.checkForm($('.owl-item.active .quiz__form'))) {
           return false;
         } else {
           $('.quiz').trigger('next.owl.carousel');
@@ -114,6 +114,7 @@ $(document).ready(function() {
       $(this).siblings('label').show();
     }
   });
+
   $(function() {
     $('.quiz').owlCarousel({
       loop: false,
@@ -132,16 +133,16 @@ $(document).ready(function() {
       var items = event.item.count - 2;
       var item = event.item.index;
       var persent = (100 / items) * event.item.index;
-      $('.active').find('#counter').html("<b>вопрос " + item + "</b> / " + items);
+      $('.active').find('#quiz-counter').html("<b>вопрос " + item + "</b> / " + items);
       $('.active').find('progress').val(persent);
     }
   });
 
-  $('.main-slide__btn').click(function() {
+  $('.js-main-slide-btn').click(function() {
     $('.quiz').trigger('next.owl.carousel');
   })
 
-  $('.quiz-btn--prev').click(function() {
+  $('.js-quiz-prev-btn').click(function() {
     $('.quiz').trigger('prev.owl.carousel');
   })
 
