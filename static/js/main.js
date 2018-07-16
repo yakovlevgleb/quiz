@@ -28,7 +28,10 @@ $(document).ready(function() {
       $('.quiz').submit(function(e) {
         if (!_th.checkForm($(this))) {
           return false;
-        }
+        } else {
+					e.preventDefault()
+					$('.quiz').trigger('next.owl.carousel');
+				}
       });
 
       $('.js-quiz-next-btn').click(function() {
@@ -72,6 +75,12 @@ $(document).ready(function() {
                 checkResult = false;
               }
               break;
+						case 'select':
+							if (!$(this).parent().hasClass('changed')) {
+								$(this).parent().addClass('warning');
+								checkResult = false;
+							}
+							break;
             case 'mobile':
               if ($.trim($(this).val()).length < 22) {
                 $(this).addClass('warning');
@@ -120,6 +129,7 @@ $(document).ready(function() {
       pullDrag: false,
       onInitialized: counter,
       onTranslated: counter,
+			autoHeight:true,
     })
 
     function counter(event) {
@@ -140,5 +150,5 @@ $(document).ready(function() {
     $('.quiz').trigger('prev.owl.carousel');
   })
 
-  $('input, select').styler();
+  $('input, .js-style-select, .js-style-file').styler({selectSmartPositioning: false, selectPlaceholder: ''});
 });
